@@ -11,7 +11,7 @@ $folder = '';
 // Space seperated list of extensions, you probably won't have to change this.
 $exts = 'gif'; // jpg jpeg png 
 
-$files = array(); $i = -1; // Initialize some variables
+$files = array(2); $i = -1; // Initialize some variables
 if ('' == $folder) $folder = './';
 
 $handle = opendir($folder);
