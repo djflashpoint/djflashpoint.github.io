@@ -9,7 +9,7 @@ http://photomatt.net/scripts/randomimage
 $folder = '';
 
 // Space seperated list of extensions, you probably won't have to change this.
-$exts = 'jpg jpeg png gif';
+$exts = 'gif'; // jpg jpeg png 
 
 $files = array(); $i = -1; // Initialize some variables
 if ('' == $folder) $folder = './';
