@@ -6,7 +6,7 @@ Latest version always at:
 http://photomatt.net/scripts/randomimage
 */// Make this the relative path to the images, like "../img" or "random/images/".
 // If the images are in the same directory, leave it blank.
-$folder = '../img/';
+$folder = '';
 
 // Space seperated list of extensions, you probably won't have to change this.
 $exts = 'jpg jpeg png gif';
