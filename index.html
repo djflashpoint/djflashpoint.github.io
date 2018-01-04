@@ -3,6 +3,11 @@
     <link rel="icon" href="favicon.png" />
     <script type="text/javascript" src="snowstorm.js">
 </script>
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
     <title>
       djflashpoint
     </title>
@@ -25,7 +30,7 @@
         Vegas 2 by djflashpoint</a></iframe>
       </h2>
       <h3>
-        <iframe style="border: 0; width: 700px; height: 530px;"
+        <iframe style="border: 0; width: 700px; height: 530px;onload="resizeIframe(this)""
         src="https://djflashpoint.bandcamp.com/"
         seamless=""><a href=
         "https://djflashpoint.bandcamp.com/">Music by djflashpoint</a></iframe>
