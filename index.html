@@ -1,63 +1,106 @@
-<html lang="en" xmlns="https://www.w3.org/1999/xhtml">
+<html>
+<title>djflashpoint</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/favicon.png" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1 {
+    font-family: "Montserrat", sans-serif
+  }
 
-<head>
-  <link rel="icon" href="favicon.png" />
-  <title>djflashpoint</title>
-</head>
+  img {
+    margin-bottom: -7px
+  }
 
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+</style>
 
-<body align="center" style="position: relative;overflow: scroll;background: url(https://media.giphy.com/media/u7uwliwM86GBi/giphy.gif)bottom no-repeat;background-size: 100%;background-color: #0B0007;color: lime;font-size: 300%;">
-  <style>
-    canvas {
-      width: 100%;
-      height: 100%;
-    }
+<body>
 
-    img {
-      width: 100%;
-    }
-  </style>
-  <center>
-    <h1>
-        <img src="logo.png" alt="djflashpoint" />
-      </h1>
-    <h2>
-      <div style="float:left;width:50%;display:inline-block;">
-      <iframe src="https://player.twitch.tv/?channel=djflashpoint" frameborder="0" allowfullscreen="true" scrolling="no" height="480" width="100%"></iframe>
-  </div>
-<div style="float:right;width:50%;display:inline-block;">
-      <iframe src="https://twitch.tv/embed/djflashpoint/chat?darkpopout" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="100%"></iframe>
-  </div>
-    </h2>
-    <h3>
-        <iframe src="https://djflashpoint.bandcamp.com" frameborder="0" allowfullscreen="true" scrolling="true" height="378" width="100%"></iframe>
-      <!--<a class="twitter-timeline" data-width="100%" data-height="500" data-theme="dark" href="https://twitter.com/DJFlashpoint?ref_src=twsrc%5Etfw"</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
-      </h3>
-    <h4>
-      <div style="float:left;width:50%;display:inline-block;">
-      <iframe src="https://kit.com/embed?url=https%3A%2F%2Fkit.com%2FDJFlashpoint%2Fremote-broadcasting-kit" style="background-color: #0B0007;display: block; border: 0px; margin: 0 auto; width: 100%; height: 75vw; max-width: 700px; max-height: 700px" scrolling="no"></iframe>
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+    <div class="w3-bar-block w3-center">
+      <a href="https://djflashpoint.github.io" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Github Page</a>
+      <a href="https://www.flickr.com/people/djflashpoint/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Flickr</a>
+      <a href="https://djflashpoint.bandcamp.com/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Bandcamp</a>
+      <a href="https://twitter.com/DJFlashpoint" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Twitter</a>
     </div>
-    <div style="float:right;width:50%;display:inline-block;">
-    <iframe src="https://kit.com/embed?url=https%3A%2F%2Fkit.com%2FDJFlashpoint%2Fstudio" style="background-color: #0B0007;display: block; border: 0px; margin: 0 auto; width: 100%; height: 75vw; max-width: 700px; max-height: 700px" scrolling="no"></iframe>
-  </div>
-    <p>
-      <iframe src="https://kit.com/embed?url=https%3A%2F%2Fkit.com%2FDJFlashpoint%2Fcode" style="background-color: #0B0007;display: block; border: 0px; margin: 0 auto; width: 100%; height: 75vw; max-width: 700px; max-height: 700px" scrolling="no"></iframe>
-      <p>
-  <script src="https://apis.google.com/js/platform.js"></script>
-  <div class="g-ytsubscribe" data-channelid="UCz538Ako6bTT3e8g9Q3HU_w" data-layout="full" data-theme="dark" data-count="default"></div>
-  <p>
-      <a href="irc.html" onclick="javascript:void window.open('irc.html','1509660907092','width=800,height=800,toolbar=0,menubar=0,location=0,status=1,scrollbars=0,resizable=1,left=0,top=0');return false;">IRC</a>
-      <p>
-      <a href="sound.html" onclick="javascript:void window.open('sound.html','1509660907092','width=800,height=800,toolbar=0,menubar=0,location=0,status=1,scrollbars=0,resizable=1,left=0,top=0');return false;">soundboard</a>
-      </h4>
+  </nav>
 
-    <div align="center"></div>
-  </center>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-content" style="max-width:1500px">
+
+    <!-- Header -->
+    <div class="w3-opacity">
+      <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <div class="w3-clear"></div>
+      <header class="w3-center w3-margin-bottom">
+        <h1><b><img src="img/logo.png"></b></h1>
+        <p><b>My Portfolio</b></p>
+        <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+      </header>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+      <div class="w3-third">
+        <a href="https://flic.kr/p/27uyLva"> <img src="https://c1.staticflickr.com/1/893/42330088331_5ff9a4e04a_k.jpg" style="width:100%">
+        <a href="https://flic.kr/p/27uyL4i"> <img src="https://c1.staticflickr.com/1/881/42330086831_0497dc3fd9_k.jpg" style="width:100%"></div>
+      <div class="w3-third">
+        <a href="https://flic.kr/p/267Vvo8"> <img src="https://c1.staticflickr.com/1/957/41428815135_9ed7e86291_k.jpg" style="width:100%">
+        <a href="https://flic.kr/p/27uyKM6"> <img src="https://c1.staticflickr.com/1/948/42330085891_44487d96d7_k.jpg" style="width:100%"></div>
+      <div class="w3-third">
+        <a href="https://flic.kr/p/27uyKhZ"> <img src="https://c1.staticflickr.com/1/949/42330084261_6bbde8e3dd_k.jpg" style="width:100%">
+      </div>
+
+      <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+      <a href="https://facebook.com/djflashpoint"<a/><i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <a href="https://instagram.com/djflashpoint"<a/><i class="fa fa-instagram w3-hover-opacity"></i>
+      <a href="https://pinterest.com/djflashpoint"<a/><i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <a href="https://twitter.com/djflashpoint"<a/><i class="fa fa-twitter w3-hover-opacity"></i>
+      <a href="https://www.linkedin.com/in/djflashpoint/"<a/><i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Made by <a href="https://djflashpoint.github.io" target="_blank" class="w3-hover-text-green">djflashpoint</a></p>
+        </footer>
+
+        <script>
+          // Toggle grid padding
+          function myFunction() {
+            var x = document.getElementById("myGrid");
+            if (x.className === "w3-row") {
+              x.className = "w3-row-padding";
+            } else {
+              x.className = x.className.replace("w3-row-padding", "w3-row");
+            }
+          }
+          // Open and close sidebar
+          function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+          }
+
+          function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+          }
+        </script>
+
 </body>
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@djflashpoint" />
 <meta name="twitter:title" content="djflashpoint" />
-<meta name="twitter:description" content="My Github website" />
+<meta name="twitter:description" content="Portfolio" />
 <meta name="twitter:image" content="https://djflashpoint.github.io/favicon.png" />
 
 </html>
