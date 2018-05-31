@@ -1680,4 +1680,6 @@ a {
 iframe {
     display:block;
     width:100%;
+    overflow: hidden;
+    padding: 16;
 }
