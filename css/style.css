@@ -1676,3 +1676,8 @@ a {
   text-decoration: none;
   /* Gets rid of dirty default underline */
 }
+/*oh boy new code*/
+iframe {
+    display:block;
+    width:100%;
+}
