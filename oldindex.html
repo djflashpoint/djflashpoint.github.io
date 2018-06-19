@@ -1,0 +1,113 @@
+<html>
+<title>djflashpoint</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/favicon.png" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+    background-color: #ccc;
+  }
+
+  h1 {
+    font-family: "Montserrat", sans-serif
+  }
+
+  img {
+    margin-bottom: -7px
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+</style>
+
+<body>
+  <!--«ďĵƒLÅSĥpōįnŧ»-->
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+    <div class="w3-bar-block w3-center">
+      <a href="/music.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Music Page</a>
+      <a href="https://codepen.io/djflashpoint" class="w3-bar-item w3-button w3-text-grey w3-hover-black">CodePen</a>
+      <a href="https://github.com/djflashpoint" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Github</a>
+      <a href="https://www.flickr.com/people/djflashpoint/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Flickr</a>
+      <a href="https://djflashpoint.bandcamp.com/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Bandcamp</a>
+      <a href="https://twitter.com/DJFlashpoint" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Twitter</a>
+      <a href="https://twitch.tv/djflashpoint" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Twitch</a>
+      <a href="https://youtube.com/user/Gabe777" class="w3-bar-item w3-button w3-text-grey w3-hover-black">YouTube</a>
+      <a href="https://kit.com/DJFlashpoint" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Kit</a>
+    </div>
+  </nav>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-content" style="max-width:1500px">
+
+    <!-- Header -->
+    <div class="w3-opacity">
+      <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <div class="w3-clear"></div>
+      <header class="w3-center w3-margin-bottom">
+        <h1><b><img src="img/logo.png" width="100%"></b></h1>
+        <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+      </header>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+      <div class="w3-third">
+        <a href="https://flic.kr/p/27uyLva"> <img src="https://c1.staticflickr.com/1/893/42330088331_5ff9a4e04a_k.jpg" style="width:100%">
+        <a href="https://flic.kr/p/27uyL4i"> <img src="https://c1.staticflickr.com/1/881/42330086831_0497dc3fd9_k.jpg" style="width:100%"></div>
+      <div class="w3-third">
+        <a href="https://flic.kr/p/267Vvo8"> <img src="https://c1.staticflickr.com/1/957/41428815135_9ed7e86291_k.jpg" style="width:100%">
+        <a href="https://flic.kr/p/27uyKM6"> <img src="https://c1.staticflickr.com/1/948/42330085891_44487d96d7_k.jpg" style="width:100%"></div>
+      <div class="w3-third">
+        <a href="https://flic.kr/p/27uyKhZ"> <img src="https://c1.staticflickr.com/1/949/42330084261_6bbde8e3dd_k.jpg" style="width:100%">
+          </div>
+
+      <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px; background-color: #ccc">
+      <a href="https://facebook.com/djflashpoint" <a/><i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <a href="https://instagram.com/djflashpoint" <a/><i class="fa fa-instagram w3-hover-opacity"></i>
+      <a href="https://pinterest.com/djflashpoint" <a/><i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <a href="https://twitter.com/djflashpoint" <a/><i class="fa fa-twitter w3-hover-opacity"></i>
+      <a href="https://www.linkedin.com/in/djflashpoint/" <a/><i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Made by <a href="https://github.com/djflashpoint" target="_blank" class="w3-hover-text-green">«ďĵƒLÅSĥpōįnŧ»</a></p>
+        </footer>
+
+        <script>
+          // Toggle grid padding
+          function myFunction() {
+            var x = document.getElementById("myGrid");
+            if (x.className === "w3-row") {
+              x.className = "w3-row-padding";
+            } else {
+              x.className = x.className.replace("w3-row-padding", "w3-row");
+            }
+          }
+          // Open and close sidebar
+          function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+          }
+
+          function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+          }
+        </script>
+
+</body>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@djflashpoint" />
+<meta name="twitter:title" content="djflashpoint" />
+<meta name="twitter:description" content="djflashpoint" />
+<meta name="twitter:image" content="/img/favicon.png" />
+
+</html>
