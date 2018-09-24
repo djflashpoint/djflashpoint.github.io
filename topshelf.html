@@ -38,7 +38,8 @@
       <a href="/420.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">A Year on the Bottom Shelf</a>
       <a href="/topshelf.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Top Shelf of the Week</a>
       <a href="topshelfarchive/archive.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Top Shelf Archive</a>
-      <a href="/food.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Food</a><p>
+      <a href="/food.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Food</a>
+      <p>
       </p>
       <a href="https://codepen.io/djflashpoint" class="w3-bar-item w3-button w3-text-dark-grey w3-hover-black">CodePen</a>
       <a href="https://github.com/djflashpoint" class="w3-bar-item w3-button w3-text-dark-grey w3-hover-black">Github</a>
@@ -70,34 +71,38 @@
     <div class="w3-container w3-text-gray w3-wide w3-center">
       <h2>Top Shelf of the Week<p>(Week 5, Sept 2018)</p></h2>
     </div>
-      <div class="w3-container w3-text-light-green w3-center">
-        <h2><a href="https://weedmaps.com/brands/cannabiotix/flower/hybrid-flower/cannabiotix-casino-kush"><b>Casino Kush</b></a></h2>
-      </div>
-      <div class="w3-container w3-text-purple w3-center">
-        <h2>Indica-Dominant</h2>
-      </div>
-      <div class="w3-container w3-text-green w3-center">
-        <h2><b>Hybrid</b></h2>
-      </div>
+    <div class="w3-container w3-text-light-green w3-center">
+      <h2><a href="https://weedmaps.com/brands/cannabiotix/flower/hybrid-flower/cannabiotix-casino-kush"><b>Casino Kush</b></a></h2>
+    </div>
+    <div class="w3-container w3-text-purple w3-center">
+      <h2>Indica-Dominant</h2>
+    </div>
+    <div class="w3-container w3-text-green w3-center">
+      <h2><b>Hybrid</b></h2>
+    </div>
 
     <div class="w3-row" id="myGrid">
+        <div class="w3-third">
+          <img id="myImg1" src="img/420/Casino1.png" style="width:100%">
+        </div>
+        <div class="w3-third">
+          <img id="myImg2" src="img/420/Casino2.png" style="width:100%">
+        </div>
+        <div class="w3-third">
+          <img id="myImg3" src="img/420/Casino3.png" style="width:100%">
+        </div>
 
-
-      <div class="w3-third">
-        <a href="img/420/Casino1.png"> <img src="img/420/Casino1.png" style="width:100%"></a>
-      </div>
-      <div class="w3-third">
-        <a href="img/420/Casino2.png"> <img src="img/420/Casino2.png" style="width:100%"></a>
-      </div>
-      <div class="w3-third">
-        <a href="img/420/Casino3.png"> <img src="img/420/Casino3.png" style="width:100%"></a>
-      </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+        </div>
+    </div>
+    <p>
+      <div class="w3-container w3-text-gray w3-wide w3-center">
+        <h2><a href="topshelfarchive/archive.html">Archive</a></h2>
+    </p>
   </div>
-  <p><div class="w3-container w3-text-gray w3-wide w3-center">
-    <h2><a href="topshelfarchive/archive.html">Archive</a></h2>
-  </p></div>
-  </div>
-<!-- End Page Content -->
+  <!-- End Page Content -->
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px; background-color: #ccc">
@@ -107,28 +112,61 @@
     <a href="https://twitter.com/djflashpoint" <a/><i class="fa fa-twitter w3-hover-opacity"></i>
     <a href="https://www.linkedin.com/in/djflashpoint/" <a/><i class="fa fa-linkedin w3-hover-opacity"></i>
     <p class="w3-medium">Made by <a href="https://github.com/djflashpoint" target="_blank" class="w3-hover-text-green">«ďĵƒLÅSĥpōįnŧ»</a></p>
-        </footer>
+  </footer>
 
-        <script>
-          // Toggle grid padding
-          function myFunction() {
-            var x = document.getElementById("myGrid");
-            if (x.className === "w3-row") {
-              x.className = "w3-row-padding";
-            } else {
-              x.className = x.className.replace("w3-row-padding", "w3-row");
-            }
-          }
-          // Open and close sidebar
-          function w3_open() {
-            document.getElementById("mySidebar").style.width = "100%";
-            document.getElementById("mySidebar").style.display = "block";
-          }
+  <script>
+    // Toggle grid padding
+    function myFunction() {
+      var x = document.getElementById("myGrid");
+      if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+      } else {
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+      }
+    }
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.width = "100%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
 
-          function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-          }
-        </script>
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img1 = document.getElementById('myImg1');
+    var img2 = document.getElementById('myImg2');
+    var img3 = document.getElementById('myImg3');
+    var modalImg = document.getElementById("img01");
+    img1.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+    //handle click for myImg2
+    img2.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    //handle click for myImg3
+    img3.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
 
 </body>
 <meta name="twitter:card" content="summary_large_image">
