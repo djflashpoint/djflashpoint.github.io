@@ -34,7 +34,7 @@ body {
   background-size: cover;
   border-radius: 1rem;
   margin: 0 auto;
-
+  overflow: hidden;
   padding: 2rem;
   }
 /*   max-width: 1020px; */
