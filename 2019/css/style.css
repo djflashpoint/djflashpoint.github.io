@@ -46,3 +46,44 @@ body {
   padding: 2rem;
   }
 /*   max-width: 1020px; */
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  position: absolute;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: grey;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: transparent;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 12px;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: transparent;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: transparent;
+  color: black;
+}
