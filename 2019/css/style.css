@@ -37,7 +37,7 @@ body {
 }
 
 .wrapper {
-  background-image: url(../2019.gif);
+  background-image: url(../img/2019.gif);
   background-position: center;
   background-size: cover;
   border-radius: 1rem;
@@ -50,7 +50,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: transparent;
-  position: absolute;
+  position: inherit;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
