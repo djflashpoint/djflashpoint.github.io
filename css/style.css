@@ -50,7 +50,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: transparent;
-  position: absolute;
+  position: inherit;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
