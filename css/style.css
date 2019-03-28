@@ -111,7 +111,7 @@ body {
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
   background-color: transparent;
-  color: darkslategray;
+  color: darkslategrey;
 }
 
 

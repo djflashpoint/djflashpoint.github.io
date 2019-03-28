@@ -45,7 +45,11 @@ html {
 }
 
 a {
-  color:darkslategray;
+  color:grey;
+  font-size:24px;
+}
+a.hover {
+  color:darkslategrey;
   font-size:24px;
 }
 
@@ -117,7 +121,7 @@ body {
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
   background-color: transparent;
-  color: darkslategray;
+  color: darkslategrey;
 }
 
 /* Style the active link (or home/logo) */
