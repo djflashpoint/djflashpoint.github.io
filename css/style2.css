@@ -53,6 +53,14 @@ a:hover {
   color:darkslategrey;
 }
 
+a:visited {
+  color:dimgrey;
+}
+
+a:active {
+  color: black;
+}
+
 body {
   background-color: black;
   font-family: 'Helvetica', sans-serif;
