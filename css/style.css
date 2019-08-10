@@ -55,21 +55,22 @@ body {
 
 .iframe-container {
   overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
+  position: inherit;
 }
 
-.iframe-container iframe {
+.iframe-container
+iframe {
    border: 0;
-   height: 100%;
+   height: 75%;
    left: 0;
-   position: absolute;
-   top: 0;
+   position: fixed;
+   top: auto;
+   bottom: auto;
    width: 100%;
 }
 
 .wrapper {
-  background-image: url(https://f4.bcbits.com/img/a1481783638_10.jpg);
+  background-image: url();
   background-position: center;
   background-size: cover;
   border-radius: 1rem;
