@@ -86,19 +86,25 @@
 <!--content-->
 
 
+<div id="twitch-embed"></div>
 
-<iframe src="http://player.twitch.tv/?channel=djflashpoint" allowfullscreen height="720" width="100%" *class="col-md-12">
-</iframe>
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
-<iframe src="https://www.twitch.tv/embed/djflashpoint/chat"
-        height="400"
-        width="100%">
-</iframe>
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: 720,
+        channel: "djflashpoint",
+        layout: "video-with-chat",
+        theme: "dark",
+      });
+    </script>
+
 
 
 <!--content end-->
-</div>
-
 
 
 </body>
