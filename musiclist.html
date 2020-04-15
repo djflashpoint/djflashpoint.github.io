@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Music bash commands for cvlc</title>
+<meta name="generator" content="Geany 1.35" />
+</head>
+
+<body style="background-color:black; color:green; text-align:center;">
+
+<a href="http://5.135.173.165:80/stream1">Venice Classic Radio</a><p></p>
+<input type="text" size="40" value="cvlc http://5.135.173.165:80/stream1 -R" id="myInput">
+<button onclick="myFunction()">Copy text</button><p></p>
+<a href="http://ice1.somafm.com/defcon-128-mp3">Soma FM DEF CON Radio</a><p></p>
+<input type="text" size="40" value="cvlc http://ice1.somafm.com/defcon-128-mp3 -R" id="myInput">
+<button onclick="myFunction()">Copy text</button><p></p>
+<a href="http://ice1.somafm.com/u80s-256-mp3">Soma FM Underground 80s</a><p></p>
+<input type="text" size="40" value="cvlc http://ice1.somafm.com/u80s-256-mp3 -R" id="myInput">
+<button onclick="myFunction()">Copy text</button><p></p>
+<script>
+function myFunction() {
+var copyText = document.getElementById("myInput");
+
+copyText.select();
+copyText.setSelectionRange(0, 99999); 
+
+document.execCommand("copy");
+
+alert("Copied the text: " + copyText.value);
+}
+</script>
+</body
+</html>
