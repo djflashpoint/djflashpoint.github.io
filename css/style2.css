@@ -122,6 +122,15 @@ body {
   overflow: hidden;
   padding: 2rem;
   }
+
+  code {
+      background-color: #bbbbbb;
+      border-radius: 3px;
+      font-family: courier, monospace;
+      padding: 0 3px;
+  }
+
+
 /*   max-width: 1020px; */
 /* Style the navigation menu */
 .topnav {

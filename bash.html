@@ -129,9 +129,32 @@
 <i>lolcat</i><p></p>
 <i>mplayer</i><p></p>
 <i>mpv</i><p></p>
-<i>Shutdown Now as Superuser</i>
+<i>Shutdown Now as Superuser</i><p></p>
 <input type="text" size="40" value="sudo shutdown -h now" id="myInput">
 <button onclick="myFunction2()">Copy text</button><p></p>
+
+<p></p>
+<i>ASCIIQuarium: Install Term-Animation</i><p></p>
+<pre><code>
+$ sudo apt-get install libcurses-perl
+$ cd /tmp
+$ wget http://search.cpan.org/CPAN/authors/id/K/KB/KBAUCOM/Term-Animation-2.4.tar.gz
+$ tar -zxvf Term-Animation-2.4.tar.gz
+$ cd Term-Animation-2.4/
+$ perl Makefile.PL && make && make test
+$ sudo make install
+</pre></code>
+<i>ASCIIQuarium: Download and Install</i><p></p>
+<pre><code>
+$ cd /tmp
+$ wget http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
+$ tar -zxvf asciiquarium.tar.gz
+$ cd asciiquarium_1.0/
+$ sudo cp asciiquarium /usr/local/bin
+$ sudo chmod 0755 /usr/local/bin/asciiquarium"
+</pre></code>
+
+
 
 
 <!--content end-->
