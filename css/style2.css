@@ -123,11 +123,12 @@ body {
   padding: 2rem;
   }
 
-  code {
+  pre code {
       background-color: #bbbbbb;
       border-radius: 3px;
       font-family: courier, monospace;
-      padding: 0 3px;
+      display: block;
+      padding: 20px;
   }
 
 
