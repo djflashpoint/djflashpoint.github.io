@@ -127,8 +127,18 @@ body {
       background-color: #bbbbbb;
       border-radius: 3px;
       font-family: courier, monospace;
+      font-size: 10pt;
+      color: #666666;
       display: block;
       padding: 20px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+      text-align: left;
+      line-height: 200%;
   }
 
 
