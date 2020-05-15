@@ -10,7 +10,7 @@ var openWebPiano = (function(){
   var sus = 0;
   var sustained = [];
   var notes;
-  
+
   function BufferLoader(contexts, urlList, callback) {
       this.context = contexts;
       this.urlList = urlList;
@@ -34,11 +34,11 @@ var openWebPiano = (function(){
                   loader.bufferList[index] = buffer;
                   if (++loader.loadCount == loader.urlList.length)
                       loader.onload(loader.bufferList);
-              }    
+              }
           );
       }
       request.onerror = function() {
-          console.error('BufferLoader: XHR error');        
+          console.error('BufferLoader: XHR error');
       }
       request.send();
   }
@@ -70,7 +70,7 @@ var openWebPiano = (function(){
     this.biquadFilter.connect(directGain);
     this.gain.connect(this.biquadFilter);
     this.gainA.connect(this.gain);
-    this.noteA.connect(this.gainA);  
+    this.noteA.connect(this.gainA);
     this.gainB.connect(this.gain);
     this.noteB.connect(this.gainB);
 
@@ -111,7 +111,7 @@ var openWebPiano = (function(){
         notes[noteNumber].damp = null;
         sustained.splice(sustained.indexOf(noteNumber), 1);
       }
-      
+
       var bufNumA = Math.floor((noteNumber - 21)/12);
       var bufNumB = bufNumA + 1;
       var noteNum = bufNumA * 12 + 21;
@@ -131,7 +131,7 @@ var openWebPiano = (function(){
         var gain_B = 1 - gain_A;
       }
       notes[noteNumber] = new Note(noteNumber);
-      notes[noteNumber].on(bufNumA,bufNumB,rate_A,rate_B,filtFreq,gain_A,gain_B,gain_);  
+      notes[noteNumber].on(bufNumA,bufNumB,rate_A,rate_B,filtFreq,gain_A,gain_B,gain_);
     }
   }
 
@@ -142,7 +142,7 @@ var openWebPiano = (function(){
         notes[noteNumber].noteA.stop(context.currentTime + 2);
         notes[noteNumber].noteB.stop(context.currentTime + 2);
         notes[noteNumber].damp.start(0);
-      } 
+      }
       delete notes[noteNumber];
     } else {
       sustained.push(noteNumber);
@@ -150,7 +150,7 @@ var openWebPiano = (function(){
   }
 
   function sustain(val) {
-    if (val==127) { 
+    if (val==127) {
       sus = true;
       convGain.gain.value = 1;
       convGainAfter.gain.value = 1;
@@ -166,7 +166,7 @@ var openWebPiano = (function(){
       sustained = [];
     }
   }
-  
+
   function init(contexts) {
     context = contexts;
     convolver = context.createConvolver();
@@ -210,4 +210,3 @@ var openWebPiano = (function(){
   }
 
 })();
-
