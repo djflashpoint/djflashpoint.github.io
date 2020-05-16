@@ -1,6 +1,8 @@
 body {
   text-align: center;
   font-family: 'Do Hyeon', sans-serif;
+  color: darkgray;
+  background-color: black;
 }
 
 .centered {
