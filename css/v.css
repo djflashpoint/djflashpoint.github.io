@@ -1,3 +1,4 @@
+/* modified version of Retro VHS Sun by James Thomas https://codepen.io/jamesthomas/pen/rXqyWB */
 html, body {
   height: 100%;
   background-color: #112;
@@ -149,6 +150,28 @@ a:hover {
             filter: hue-rotate(0deg);
   }
 }
+
+iframe {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+/* w3 snippets below */
+
+
+
+
 .topnav {
   overflow: hidden;
   background-color: transparent;
