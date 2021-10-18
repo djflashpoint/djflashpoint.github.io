@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/v.css">
+    <title>h4x0r$</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+  </head>
+  <body>
+    <!--content goes here-->
+    <script>
+    figlet.defaults({ fontPath: 'https://unpkg.com/figlet/fonts/' });
+    figlet.preloadFonts(['Standard', 'Slant'], ready);
+
+    var term;
+
+    function ready() {
+        term = $('body').terminal(function(cmd) {
+            // echo function will run it in each render,
+            // so text can be resized based on cols
+            this.echo(() => render(this, cmd));
+        }, {
+            greetings: false,
+            onInit() {
+                this.echo(() => render(this, 'Figlet Demo', 'Slant') +
+                    `\n[[;rgba(255,255,255,0.99);]jQuery Terminal ${$.terminal.version}]. Type something to render figlet text.\n`)
+            }
+        });
+    }
+
+    function render(term, text, font) {
+        const cols = term.cols();
+        return figlet.textSync(text, {
+            font: font || 'Standard',
+            width: cols,
+            whitespaceBreak: true
+        });
+    }
+    </script>
+  </body>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@djflashpoint">
+  <meta name="twitter:creator" content="@djflashpoint">
+  <meta name="twitter:title" content="h4x0r$">
+  <meta name="twitter:description" content="h4x0r$">
+  <meta name="twitter:image" content="https://djflashpoint.github.io/img/matrix.png">
+</html>

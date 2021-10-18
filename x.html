@@ -20,6 +20,18 @@
     }, {
         greetings: 'My First Web Terminal'
     });
+    $('body').terminal({
+    title: function(...args) {
+        const options = $.terminal.parse_options(args);
+        return fetch(options.url || 'https://terminal.jcubic.pl')
+            .then(r => r.text())
+            .then(html => html.match(/<title>([^>]+)<\/title>/)[1]);
+    }
+}, {
+    checkArity: false,
+    greetings: 'My First Terminal\n'
+});
+
     </script>
   </body>
   <meta name="twitter:card" content="summary_large_image">
