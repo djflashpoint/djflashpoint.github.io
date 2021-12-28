@@ -3116,3 +3116,11 @@ body {
   overflow: visible;
   clip: auto
 }
+
+code {
+  font-family: Consolas,"courier new";
+  color: #aaaaaa;
+  background-color: #333333;
+  padding: 2px;
+  font-size: 105%;
+}

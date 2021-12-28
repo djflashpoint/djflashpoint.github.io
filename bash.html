@@ -6,6 +6,15 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style2.css">
   <title>bash commands</title>
+  <style>
+  code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+  </style>
   <script>
     /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
     function myFunction() {
@@ -143,7 +152,7 @@
 <br>
 <p></p>
 <i>ASCIIQuarium: Install Term-Animation</i><p></p>
-<pre><code><ul>
+<blockquote><pre><code><ul>
 $ sudo apt-get install libcurses-perl
 $ cd /tmp
 $ wget http://search.cpan.org/CPAN/authors/id/K/KB/KBAUCOM/Term-Animation-2.4.tar.gz
@@ -151,16 +160,20 @@ $ tar -zxvf Term-Animation-2.4.tar.gz
 $ cd Term-Animation-2.4/
 $ perl Makefile.PL && make && make test
 $ sudo make install
-</ul></code></pre>
+</ul></code></pre></blockquote>
 <i>ASCIIQuarium: Download and Install</i><p></p>
-<pre><code>
+<blockquote><pre><code>
 $ cd /tmp
 $ wget http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
 $ tar -zxvf asciiquarium.tar.gz
 $ cd asciiquarium_1.1/
 $ sudo cp asciiquarium /usr/local/bin
 $ sudo chmod 0755 /usr/local/bin/asciiquarium
-</pre></code>
+</code></pre></blockquote>
+
+<xmp>
+$ sudo apt update
+</xmp>
 
 
 
