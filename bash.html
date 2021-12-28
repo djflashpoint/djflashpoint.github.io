@@ -99,24 +99,24 @@
 
 
 <a href="http://5.135.173.165:80/stream1">Venice Classic Radio</a><p></p>
-<input type="text" size="40" value="cvlc http://5.135.173.165:80/stream1 -R" id="myInput">
+<input type="text" size="40" value="nvlc http://5.135.173.165:80/stream1 -R" id="myInput">
 <button onclick="myFunction2()">Copy text</button><p></p>
 <a href="http://ice1.somafm.com/defcon-128-mp3">Soma FM DEF CON Radio</a><p></p>
-<input type="text" size="40" value="cvlc http://ice1.somafm.com/defcon-128-mp3 -R" id="myInput">
+<input type="text" size="40" value="nvlc http://ice1.somafm.com/defcon-128-mp3 -R" id="myInput">
 <button onclick="myFunction2()">Copy text</button><p></p>
 <a href="http://ice1.somafm.com/u80s-256-mp3">Soma FM Underground 80s</a><p></p>
-<input type="text" size="40" value="cvlc http://ice1.somafm.com/u80s-256-mp3 -R" id="myInput">
+<input type="text" size="40" value="nvlc http://ice1.somafm.com/u80s-256-mp3 -R" id="myInput">
 <button onclick="myFunction2()">Copy text</button><p></p>
 <a href="http://ice1.somafm.com/dronezone-128-mp3">Soma FM Drone Zone</a><p></p>
-<input type="text" size="40" value="cvlc http://ice1.somafm.com/dronezone-128-mp3 -R" id="myInput">
+<input type="text" size="40" value="nvlc http://ice1.somafm.com/dronezone-128-mp3 -R" id="myInput">
 <button onclick="myFunction2()">Copy text</button><p></p>
 <br>
 <b>Bonus Terminal Commands</b><p></p>
 <i>tty-clock</i><p></p>
-<input type="text" size="40" value="tty-clock -sSbBcC4h" id="myInput">
+<input type="text" size="40" value="tty-clock -sSbBcC7h" id="myInput">
 <button onclick="myFunction2()">Copy text</button><p></p>
 <i>cmatrix</i><p></p>
-<input type="text" size="40" value="cmatrix -sb" id="myInput">
+<input type="text" size="40" value="cmatrix -sba" id="myInput">
 <button onclick="myFunction2()">Copy text</button><p></p>
 <i>neofetch</i><p></p>
 <input type="text" size="40" value="neofetch --ascii_distro xubuntu" id="myInput">
@@ -144,22 +144,22 @@
 <p></p>
 <i>ASCIIQuarium: Install Term-Animation</i><p></p>
 <pre><code><ul>
-$ sudo apt-get install libcurses-perl
-$ cd /tmp
-$ wget http://search.cpan.org/CPAN/authors/id/K/KB/KBAUCOM/Term-Animation-2.4.tar.gz
-$ tar -zxvf Term-Animation-2.4.tar.gz
-$ cd Term-Animation-2.4/
-$ perl Makefile.PL && make && make test
-$ sudo make install
+sudo apt-get install libcurses-perl
+cd /tmp
+wget http://search.cpan.org/CPAN/authors/id/K/KB/KBAUCOM/Term-Animation-2.4.tar.gz
+tar -zxvf Term-Animation-2.4.tar.gz
+cd Term-Animation-2.4/
+perl Makefile.PL && make && make test
+sudo make install
 </ul></code></pre>
 <i>ASCIIQuarium: Download and Install</i><p></p>
 <pre><code>
-$ cd /tmp
-$ wget http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
-$ tar -zxvf asciiquarium.tar.gz
-$ cd asciiquarium_1.0/
-$ sudo cp asciiquarium /usr/local/bin
-$ sudo chmod 0755 /usr/local/bin/asciiquarium"
+cd /tmp
+wget http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
+tar -zxvf asciiquarium.tar.gz
+cd asciiquarium_1.1/
+sudo cp asciiquarium /usr/local/bin
+sudo chmod 0755 /usr/local/bin/asciiquarium
 </pre></code>
 
 
