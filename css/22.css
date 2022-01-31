@@ -1,35 +1,14 @@
-/* YOU THOUGHT YOU COULD ESCAPE THE MEMES
-
- yyyyyyyyyhmhsoooshmh/-----------/ohddhyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyhddsooooooooossyyyys+/:-----
-yyyyyyyyhddsooooosydy:-------------/syhyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyhhdyoooosssyyyo+/:----------
-yyyyyyyhddyssssssssyhs:--------------:+yhhhyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyhddyssyso+/:---------------
-yyyyyyhdmdhyhhhhhhysyhy+:--------------:/oyhhyyyyyyyyyyyyyyyyyyyhhhhhhhhhhddyso/:------------------:
-yyyyyyhmmdhhhdddddhhyhdho/----------------:+syhhhhyyyyyyyyyyyyyyyyyyysssoo+/:---------------------:o
-yyyyyhmmddddddddddddhhddhyo:----------------:://///////::::-------------------------------------:/+y
-yyyyydNmddddddddddddddhdddds/-----------------------------------------------------------------:+osss
-yyyyhmmdddddddddddddddddddmdho:------------------------------------------------------------:/oyhhhhh
-yyyhdmmdddddddddddddddddddddddho///:----------------------------------------------------::+syhhddddd
-yyyhmmddddddddddddddddddddddddddhs/:----------------------------------------------:::::/oyhhhhhhhddd
-yyhdmmdddddmddddddddmmmmmmmmdddmh+-------------------------------------------------:+syyhhhhhhhddddd
-yydmmmmmddddddddddddmmmNNNNmmdmds:--------------------------------------------------/ohhhhhhhhhhdddd
-yhmNmmddddddmdddddddmmNNNNNmdmmh/------://++/:---------------------://+oo+:----------/shhhhhhhhhhhhh
-hdNmddddddddddddddddmmmmmmmddmdo:-----:++/sdho:--------------------/+:/hmds:----------/yddhhhyyyyyyh
-dmNmdddmmmmmmmmmmdddddddddhhdmh/------/yhydmmh/-------------------:+yyymmmy/-----------+hdhyyyyyyyyy
-mNmmdmmmNNNNNNNNNmmddddddhhhdms:------:+yhdmdy/--------------------:oyddmho:-----------:sdyyysyyyyyy
-NNmdmmNNNNNNNNNNNNmddddhhhhhmh/---------:/+++/:----:///::------------:/++/:-------------+hyssssssyyy
-NmddmmNNNNNNNNNNNNmdddhhhhhdds/::::---------------:/shhy+:-------------------:::::------:yysssssssss
-mdddmmmmNNNNNNNNNmmddhhhhhdmmdyyso+/:---------------:///:------------------:+++++++/:---:ohyssssssss
-ddddddddddddhhhhhhhhhhhhhhdmdyysyyys/-------------------------------------:+ssssssso/:---/yhssssssss
-dddddddddhhhhhhhhyyyyhhhhdmmhsssssss/--------------:::////:::------------:/ssssssssyo:----+hhyyyyyyy
-dddddddddddddddddhyyyyhhhmNmhyssssso/------------:+yhhyssooo+/:-----------/osssssssso:----:sdhyyyyyy
-hddddddddddddddddddddddddmmhsyyysso/:------------/ydho+////+oo/:----------:+ssssssso/------+hhyyyyyy
-yhdddddddddddddddddddddddmds::////::-------------/sho///////+o+:-----------:/+++++/::------:shysyyyy
-hddddddddddddddddddddddddmmh/---------------------+ss+/////+oo/:----------------------------/hyosssy
-yhhhhhhdddddddhhhhhhhhhhhdddy/---------------------/+osooooss+:-----------------------------:shyyyyh
-dddhhyyyyyyyyysssssssyyyyyyhhs/----------------------:://///::------------------------------:+hhhhhh
-dddddhyyyyyssssssssssssyyyyyhhs:-------------------------------------------------------------/yhhhhh
-ddddddddddhhhyyyyyyyysyyyhhdhhy+:------------------------------------------------------------:sdhhhh
-
+/* 
+     \_______/
+ `.,-'\_____/`-.,'
+  /`..'\ _ /`.,'\
+ /  /`.,' `.,'\  \
+/__/__/     \__\__\__
+\  \  \     /  /  /
+ \  \,'`._,'`./  /
+  \,'`./___\,'`./
+ ,'`-./_____\,-'`.
+     /       \
  */
 
 html {
@@ -122,7 +101,17 @@ body {
   overflow: hidden;
   padding: 2rem;
   }
-
+/* ||
+   ||
+   ||
+   ||
+   ||
+   ||            
+ ||  ||  
+ \\()// 
+//(__)\\
+||    ||
+*/
   pre code {
       background-color: #bbbbbb;
       border-radius: 3px;
@@ -184,7 +173,13 @@ body {
   background-color: transparent;
   color: black;
 }
-
+/*
+   !__!
+  (@)(-)
+ \.'||'./
+-:  ::  :-
+/'..''..'\
+*/
 /* w3 code below */
 
 
@@ -1640,7 +1635,38 @@ body {
 .fa-won:before, .fa-krw:before {
   content: "\f159"
 }
+/*
+Hi! You've been scrolling a while! How about a cup of joe and some cookies?!
 
+
+🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪
+
+
+                      (
+                        )     (
+                 ___...(-------)-....___
+             .-""       )    (          ""-.
+       .-'``'|-._             )         _.-|
+      /  .--.|   `""---...........---""`   |
+     /  /    |                             |
+     |  |    |                             |
+      \  \   |                             |
+       `\ `\ |                             |
+         `\ `|                             |
+         _/ /\                             /
+        (__/  \                           /
+     _..---""` \                         /`""---.._
+  .-'           \                       /          '-.
+ :               `-.__             __.-'              :
+ :                  ) ""---...---"" (                 :
+  '._               `"--...___...--"`              _.'
+jgs \""--..__                              __..--""/
+     '._     """----.....______.....----"""     _.'
+        `""--..,,_____            _____,,..--""`
+                      `"""----"""`
+
+
+*/
 .fa-bitcoin:before, .fa-btc:before {
   content: "\f15a"
 }
@@ -3124,3 +3150,13 @@ code {
   padding: 2px;
   font-size: 105%;
 }
+
+/*
+ _._     _,-'""`-._
+(,-.`._,'(       |\`-/|
+    `-.-' \ )-`( , o o)
+          `-    \`_`"'-
+    |\__/,|   (`\
+  _.|o o  |_   ) )
+-(((---(((--------
+*/
