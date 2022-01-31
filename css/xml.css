@@ -22,32 +22,3 @@ body {
   text-align: center;
 }
 
-
-
-  pre code {
-      background-color: #000000;
-      border-radius: 3px;
-      font-family: courier, monospace;
-      font-size: 10pt;
-      color: #ffffff;
-      display: block;
-      padding: 20px;
-      overflow-x: auto;
-      white-space: pre-wrap;
-      white-space: -moz-pre-wrap;
-      white-space: -pre-wrap;
-      white-space: -o-pre-wrap;
-      word-wrap: break-word;
-      text-align: left;
-      line-height: 200%;
-  }
-
-
-
-code {
-  font-family: Consolas,"courier new";
-  color: #ffffff;
-  background-color: #000000;
-  padding: 2px;
-  font-size: 105%;
-}
