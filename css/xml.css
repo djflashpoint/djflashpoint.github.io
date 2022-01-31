@@ -1,10 +1,9 @@
 urlset {
   background-color: black;
 }
-
 url {
   background-color: rgb(0, 0, 0);
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 24px;
   color: rgb(255, 255, 255);
   line-height: 1.5;
@@ -17,7 +16,6 @@ url {
 priority {
   display: none;
 }
-
 lastmod {
   display: none;
 }
