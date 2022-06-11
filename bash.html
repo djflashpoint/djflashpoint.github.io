@@ -137,7 +137,7 @@
 <input type="text" size="40" value="$ shutdown -h now" id="myInput">
 <button onclick="myFunction2()">Copy text</button><p></p>
 <br>
-<b>The Following are APT packages:</b><p></p>
+<b>The Following are APT/SNAP packages:</b><p></p>
 <i>cacafire</i>(caca-utils)<p></p>
 <i>aafire</i>(libaa-bin)<p></p>
 <i>htop</i><p></p>
@@ -147,11 +147,19 @@
 <i>lolcat</i><p></p>
 <i>mplayer</i><p></p>
 <i>mpv</i><p></p>
+<i>btop (snap)</i><p></p>
 <i>snap(<a href=https://snapcraft.io/>Snapcraft</a> "$ snap refresh" to update)</i><p></p>
 <i>flatpak(<a href=https://flathub.org/>Flathub</a> "$ flatpak update" to update)</i><p></p>
 <br>
 <p></p>
-<i>ASCIIQuarium: Install Term-Animation</i><p></p>
+<i><b>ASCIIQuarium</b></i><p></p>
+<i>Now available as a snap!</i><p></p>
+<blockquote><pre><code><ul>
+  $ sudo snap install asciiquarium
+</ul></code></pre></blockquote>
+
+<i>Legacy Installation</i><p></p>
+<i>Dependencies</i><p></p>
 <blockquote><pre><code><ul>
 $ sudo apt-get install libcurses-perl
 $ cd /tmp
@@ -170,13 +178,6 @@ $ cd asciiquarium_1.1/
 $ sudo cp asciiquarium /usr/local/bin
 $ sudo chmod 0755 /usr/local/bin/asciiquarium
 </code></pre></blockquote>
-
-<xmp>
-$ sudo apt update
-</xmp>
-
-
-
 
 <!--content end-->
 
