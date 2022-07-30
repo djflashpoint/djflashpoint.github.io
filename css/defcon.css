@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+  background-color:teal;
+  font-family: 'Helvetica', sans-serif;
+  color: darkorchid;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+a:link, a:visited {
+  color: darkorchid;
+}
