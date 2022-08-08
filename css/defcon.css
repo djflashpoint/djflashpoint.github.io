@@ -1,14 +1,32 @@
 html, body {
   height: 100%;
-  background-color:teal;
+  background-color:rgb(0, 0, 0);
   font-family: 'Helvetica', sans-serif;
-  color: darkorchid;
-  font-weight: bold;
-  text-align: center;
-  align-items: center;
+  color: rgb(33, 255, 0);
+  text-align: left;
+  align-items: left;
   align-content: center;
 }
 
 a:link, a:visited {
-  color: darkorchid;
+  color: rgb(33, 255, 0);
 }
+/* THERES NOT MUCH HERE... OK FINE HERES MORE COOL STUFF!
+
+>>> https://www.windows93.net/ <<<
+
+>>> https://windows96.net/ <<<
+
+>>> https://archive.org/details/internetarcade <<<
+
+>>> https://www.clocktab.com/ <<<
+
+>>> https://webamp.org/ <<<
+
+>>> http://virtualdesktop.org/ <<<
+
+>>> https://hackertyper.net/ <<<
+
+>>> https://xkcd.com/ <<<
+
+*/
