@@ -41,3 +41,7 @@ a:link, a:visited {
 >>> https://xkcd.com/ <<<
 
 */
+@font-face {
+  font-family: freewaygothic;
+  src: url(/fonts/freewaygothic.ttf);
+}
