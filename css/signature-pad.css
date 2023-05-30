@@ -41,7 +41,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   border: 1px solid #e8e8e8;
-  background-color: #fff;
+  background-color: #333;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
   border-radius: 4px;
   padding: 16px;
@@ -113,17 +113,9 @@ canvas {
 
 .signature-pad--actions .button {
   margin: .2em;
-}
-
-#github img {
-  border: 0;
-}
-
-@media (max-width: 940px) {
-  #github img {
-    width: 90px;
-    height: 90px;
-  }
+  font-weight:bolder;
+  background-color: #000000;
+  color: #fff;
 }
 
 @media (max-width: 480px) {
