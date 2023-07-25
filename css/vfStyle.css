@@ -1,0 +1,72 @@
+A:link {
+	COLOR: #BB55DD; TEXT-DECORATION: underline;
+font-family: arial, sans-serif;
+font-size:14px;
+font-weight: bold;
+}
+A:visited {
+	COLOR: #9933AA; TEXT-DECORATION: underline;
+font-family: arial, sans-serif;
+font-size:14px;
+font-weight: bold;
+}
+A:hover {
+	COLOR: black;         TEXT-DECORATION: none;
+        background: #BB55DD;
+font-family: arial, sans-serif;
+font-size:14px;
+font-weight: bold;
+}
+
+
+BODY, HTML {
+color : white; background : black;  
+font-family: arial, sans-serif;
+font-size: 16px;
+margin: 1px; 
+scrollbar-face-color: #800080; 
+scrollbar-shadow-color: #DD99FF;
+scrollbar-highlight-color: #DD99FF; 
+scrollbar-3dlight-color: #DD99FF;
+scrollbar-darkshadow-color: #DD99FF; 
+scrollbar-track-color: #222222;
+scrollbar-arrow-color: #DD99FF;
+}
+
+
+IMG { border-color:  #BB55DD; }
+
+.image{
+	border-color: #BB55DD;
+	border-width:1px;
+      }
+
+
+input,select,textarea
+{
+font-size:13px;
+color: white;
+border:1px solid #ff80ff;
+background-color:#222222;
+border-style: solid; border-width: 1px; 
+}
+/*
+     FILE ARCHIVED ON 05:08:12 Jun 07, 2004 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:27:24 Jul 25, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 69.512
+  exclusion.robots: 0.115
+  exclusion.robots.policy: 0.099
+  cdx.remote: 0.111
+  esindex: 0.01
+  LoadShardBlock: 36.893 (3)
+  PetaboxLoader3.datanode: 48.837 (4)
+  load_resource: 108.239
+  PetaboxLoader3.resolve: 83.897
+*/
