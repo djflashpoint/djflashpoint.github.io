@@ -1,0 +1,175 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Strawberry_gariguette_DSC03063.JPG/317px-Strawberry_gariguette_DSC03063.JPG);
+  background-repeat: repeat;
+}
+.container {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.face {
+  background-color: #8ebc00;
+  height: 120px;
+  width: 160px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 100px;
+}
+.face:before {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 120px;
+  background-color: #c1d218;
+  border-radius: 0 0 60px 60px;
+  bottom: 0;
+  left: 20px;
+}
+.face:after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 8px;
+  background-color: #477a26;
+  border-radius: 5px;
+  left: 10px;
+  top: 55px;
+}
+.eyes,
+.eyes:before {
+  position: absolute;
+  background-color: #234106;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #ffffff, 0 0 0 18px #8ebc00;
+}
+.eyes {
+  left: 35px;
+}
+.eyes:before {
+  content: "";
+  left: 70px;
+}
+.body {
+  background-color: #c1d218;
+  height: 60px;
+  width: 70px;
+  border-radius: 70px 70px 0 0;
+  box-shadow: 0 -20px 0 20px #8ebc00;
+  position: absolute;
+  left: 165px;
+  top: 230px;
+}
+.body:before,
+.body:after {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 25px;
+  background-color: #8ebc00;
+  top: 40px;
+  transform: rotate(90deg);
+}
+.body:before {
+  border-radius: 50% 0;
+  left: -12.4px;
+}
+.body:after {
+  border-radius: 0 50%;
+  right: -12.4px;
+}
+.leg-l,
+.leg-r {
+  position: absolute;
+  height: 85px;
+  width: 50px;
+  background-color: #477a26;
+  border-radius: 50%;
+  bottom: 100px;
+}
+.leg-r {
+  transform: rotate(30deg);
+  left: 230px;
+}
+.leg-l {
+  transform: rotate(-30deg);
+  right: 230px;
+}
+.leg-l:before,
+.leg-r:before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 50px;
+  background-color: #477a26;
+  border-radius: 30px 30px 0 0;
+  bottom: 10px;
+}
+.leg-l:before {
+  transform: rotate(30deg);
+  right: 15px;
+}
+.leg-r:before {
+  transform: rotate(-30deg);
+  left: 15px;
+}
+.tongue {
+  position: absolute;
+  height: 0;
+  width: 8px;
+  background-color: #f57b78;
+  border-radius: 8px;
+  transform: rotate(-45deg);
+  transform-origin: 100% 100%;
+  bottom: 65px;
+  left: 70px;
+  animation: tongue 1s ease infinite;
+}
+@keyframes tongue {
+  5% {
+    height: 130px;
+  }
+  10% {
+    height: 130px;
+  }
+  25% {
+    height: 0;
+  }
+}
+.tongue:before {
+  content: "";
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  background-color: #000000;
+  border-radius: 50%;
+  left: -1.5px;
+  opacity: 0;
+  box-shadow: 8px -8px 0 -2px #a0a0a0, -8px -8px 0 -2px #a0a0a0;
+  animation: fly 1s ease infinite;
+}
+@keyframes fly {
+  5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 0;
+  }
+}
