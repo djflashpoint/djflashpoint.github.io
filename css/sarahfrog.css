@@ -8,6 +8,7 @@
 body {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Strawberry_gariguette_DSC03063.JPG/317px-Strawberry_gariguette_DSC03063.JPG);
   background-repeat: repeat;
+  background-position: top;
 }
 .container {
   height: 400px;
