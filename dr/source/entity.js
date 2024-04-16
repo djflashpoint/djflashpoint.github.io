@@ -67,10 +67,10 @@ class entity_t {
 	_check(other) {}
 
 	_receive_damage(from, amount) {
-		/*this.h -= amount;
-		if (this.h <= -9999) {              
+		this.h -= amount;
+		if (this.h <= 0) {              
 			this._kill();
-		}*/                           //GODMODE
+		}                          //GODMODE
 	}
 
 	_kill() {

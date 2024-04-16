@@ -77,8 +77,8 @@ class entity_sentry_plasma_t extends entity_t {
 
 	_check(other) {
 		if (other instanceof(entity_player_t)) {
-			other._receive_damage(this, 1);
-			this._kill();
+			//other._receive_damage(this, 1);
+			//this._kill();
 		}
 	}
 }

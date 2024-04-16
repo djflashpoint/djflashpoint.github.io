@@ -55,9 +55,9 @@ class entity_spider_t extends entity_t {
 
 		// hurt player
 		else if (other instanceof entity_player_t) {
-			this.vx *= -1.5;
-			this.vz *= -1.5;
-			other._receive_damage(this, 1);
+			//this.vx *= -1.5;
+			//this.vz *= -1.5;
+			//other._receive_damage(this, 1);
 		}
 	}
 
