@@ -16,7 +16,7 @@ var terminal_text_garbage =
 	'1f@çX8ÎRjßf•ò√ã0êÃcÄ]Î≤moDÇ’ñ‰\\ˇ≠n=(s7É;';
 
 var terminal_text_story = 
-	'DATE: SEP. 13, 2718 - 13:32\n' +
+	'DATE: APRIL 15, 2724 - 13:32\n' +
 	'CRITICAL SOFTWARE FAILURE DETECTED\n' +
 	'ANALYZING...\n' +
 	'____\n \n' +
@@ -44,8 +44,8 @@ var terminal_text_outro =
 	'CONNECTION ESTABLISHED\n' +
 	'RECEIVING TRANSMISSION...___ \n' +
 	
-	'SENT: APRIL 15, 2018\n' +
-	'RCVD: APRIL 15, 2718\n \n' +
+	'SENT: APRIL 15, 2024\n' +
+	'RCVD: APRIL 15, 2724\n \n' +
 	
 	'THANKS FOR PLAYING ❤_ \n' +
 	
