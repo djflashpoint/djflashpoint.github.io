@@ -178,7 +178,7 @@ _document.onmouseup = function(ev) {
 
 function game_tick() {
 	var time_now = performance.now();
-	time_elapsed = (time_now - time_last)/1000;
+	time_elapsed = (time_now - time_last)/800;
 	time_last = time_now;
 
 	renderer_prepare_frame();

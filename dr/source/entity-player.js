@@ -6,7 +6,7 @@ class entity_player_t extends entity_t {
 
 	_update() {
 		var t = this,
-			speed = 128;
+			speed = 250;
 
 		// movement
 		t.ax = keys[key_left] ? -speed : keys[key_right] ? speed : 0;

@@ -3,10 +3,10 @@ var
 	vertex_buffer,
 	shader_program,
 
-	texture_size = 1024,
-	tile_size = 16,
+	texture_size = 8192,
+	tile_size = 128,
 	tile_fraction = tile_size / texture_size,
-	px_nudge = 0.5 / texture_size,
+	px_nudge = 0 / texture_size,
 	
 	max_verts = 1024 * 64,
 	num_verts = 0,
@@ -177,7 +177,7 @@ function push_block(x, z, tile_top, tile_sites) {
 
 function push_light(x, y, z, r, g, b, falloff) {
 	// Only push lights near to the camera
-	var max_light_distance = (128 + 1/falloff); // cheap ass approximation
+	var max_light_distance = (32 + 1/falloff); // cheap ass approximation
 	if (
 		num_lights < max_lights &&
 		_math.abs(-x - camera_x) < max_light_distance &&
