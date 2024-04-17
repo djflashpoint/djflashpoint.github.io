@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Grape Nuts', cursive;
+  background-color: #eee;
+  text-align: center;
+  padding: 4em 1em;
+}
+
+.gallery {
+  display: grid;
+  width: 100%;
+  max-width: 1002px;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-rows: auto;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+figure {
+  width: 300px;
+  perspective: 900px;
+
+
+  &:nth-child(1) { --imageUrl: url('https://assets.codepen.io/652/the-lucky-neko-CM7a-XBD4AU-unsplash.jpg'); }
+  &:nth-child(2) { --imageUrl: url('https://assets.codepen.io/652/karsten-winegeart-NE0XGVKTmcA-unsplash.jpg'); }
+  &:nth-child(3) { --imageUrl: url('https://assets.codepen.io/652/kabo-NjWZ07sPEJE-unsplash.jpg'); }
+  &:nth-child(4) { --imageUrl: url('https://assets.codepen.io/652/giacomo-lucarini-7M0SG3ZKdlE-unsplash.jpg'); }
+  &:nth-child(5) { --imageUrl: url('https://assets.codepen.io/652/sergey-semin-Y0WXj3xqJz0-unsplash.jpg'); }
+  &:nth-child(6) { --imageUrl: url('https://assets.codepen.io/652/jordan-bigelow-X5VoG4MA5aI-unsplash.jpg'); }
+
+  img {
+    width: 100%;
+  }
+}
+
+
+.imageRoll {
+  position: relative;
+  width: 300px; height: 300px;
+  background-color: #fff;
+  box-shadow: 1em 0.5em 2em #1234, 0 0 5em #1234 inset;
+
+  & i {
+    position: absolute;
+    left: calc(100% - 1px);
+    width: 6px; height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: transform 0.6s var(--delay, 0s) ease-in-out;
+    background-image:
+      linear-gradient(#0003, #0000 5% 95%, #0003),
+      var(--imageUrl, '');
+    background-position-x: calc(var(--bpx, 0) + 1px);
+    background-size: 300px 300px;
+  }
+
+  & > i {
+    left: 0;
+    width: 5px;
+  }
+
+  &:hover i { 
+    transform: rotateY(var(--angle, 0deg)) skewY(var(--skew, 0deg));
+    transition-delay: var(--delay2, 0s);
+  }
+
+  $count: 60;
+  $bpx: 0;
+  $delay: 0;
+  $angleChange: 0;
+  $skew: 0;
+
+  @for $i from 1 to $count {
+
+    $sel: '&';
+    @for $n from 0 to $i {
+      $sel: $sel + ' > i';
+    }
+
+    #{$sel} {
+      --bpx: #{$bpx}px;
+      --delay: #{$delay}s;
+      --delay2: #{0.6 - $delay}s;
+      --angle: #{-10 - $angleChange}deg;
+      --skew: #{$skew}deg;
+    }
+
+    $bpx: $bpx - 5;
+    $angleChange: $angleChange + 0.1;
+    $delay: $delay + 0.01;
+    $skew: $skew - 0.1;
+  }
+
+  & > figcaption {
+    position: absolute;
+    text-align: center;
+    padding-top: 2em;
+    padding-inline: 100px 25px;
+    z-index: -1;
+    font-size: 32px;
+    width: 100%; height: 100%;
+
+    & strong {
+      display: block;
+    }
+  }
+}
