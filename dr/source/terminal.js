@@ -1,7 +1,7 @@
 
 var terminal_text_ident = '&gt; ';
 var terminal_text_title = '' +
-	'𝕯 𝕰 𝕸 𝕺 𝕹  𝕽 𝖀 𝕹 \n' +
+	'𝕯 𝕰 𝕸 𝕺 𝕹 &nbsp; 𝕽 𝖀 𝕹 \n' +
 	'__ \n' +
 	'A Fork by djflashpoint' +
 	'__ \n' +

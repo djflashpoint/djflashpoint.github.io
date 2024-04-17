@@ -127,7 +127,7 @@ function renderer_prepare_frame() {
 }
 
 function renderer_end_frame() {
-	gl.uniform3f(camera_uniform, camera_x, camera_y - 10, camera_z-30);
+	gl.uniform3f(camera_uniform, camera_x, camera_y - 5, camera_z-30);
 	gl.uniform1fv(light_uniform, light_data);
 
 	gl.clearColor(0,0,0,1);
@@ -177,7 +177,7 @@ function push_block(x, z, tile_top, tile_sites) {
 
 function push_light(x, y, z, r, g, b, falloff) {
 	// Only push lights near to the camera
-	var max_light_distance = (32 + 1/falloff); // cheap ass approximation
+	var max_light_distance = (64 + 1/falloff); // cheap ass approximation
 	if (
 		num_lights < max_lights &&
 		_math.abs(-x - camera_x) < max_light_distance &&
