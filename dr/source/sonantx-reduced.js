@@ -35,7 +35,7 @@ var sonantxr_generate_song, sonantxr_generate_sound;
 
 (function() {
 var WAVE_SPS = 44100;					// Samples per second
-var MAX_TIME = 33; // maximum time, in millis, that the generator can use consecutively
+var MAX_TIME = 15; // maximum time, in millis, that the generator can use consecutively
 
 var audioCtx = null;
 

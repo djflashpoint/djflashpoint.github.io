@@ -40,7 +40,7 @@ var
 		shader_const_mat4 + "v=mat4(1,0,0,0,0,.707,.707,0,0,-.707,.707,0,0,-22.627,-22.627,1);" + // view
 		shader_const_mat4 + "r=mat4(.977,0,0,0,0,1.303,0,0,0,0,-1,-1,0,0,-2,0);"+ // projection
 		"void main(void){" +
-			"vl=vec3(0.3,0.3,0.6);" + // ambient color
+			"vl=vec3(0.2,0.9,0.2);" + // ambient color
 			"for(int i=0; i<"+max_lights+"; i++) {"+
 				"vec3 lp=vec3(l[i*7],l[i*7+1],l[i*7+2]);" + // light position
 				"vl+=vec3(l[i*7+3],l[i*7+4],l[i*7+5])" + // light color *
@@ -65,7 +65,7 @@ var
 			"else{" +  // 3) calculate color with lights and fog
 				"gl_FragColor=t*vec4(vl,1.);" +
 				"gl_FragColor.rgb*=smoothstep(" +
-					"112.,16.," + // fog far, near
+					"90.,16.," + // fog far, near
 					"gl_FragCoord.z/gl_FragCoord.w" + // fog depth
 				");" +
 			"}" +
