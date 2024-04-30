@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>3D Viewer</title>
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
-
 <body>
+  <!--<div id="myfile">
+  <form action="javascript:;"  onsubmit=" LoadMDL(url) ">
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile" accept=".glb, .gtlf"><br><br>
+    <input type="submit">
+    <button type="submit" class="input_submit" onclick="LoadMDL();">Submit</button>
+  </form>
+</div>-->
+
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
-  <model-viewer style="width: 100vw; height: 100vh;" id="lazy-load" camera-controls touch-action="pan-y" reveal="manual"
+  <!--<model-viewer src="Avocado.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>-->
+  <model-viewer name="lazy-load" style="width: 100vw; height: 100vh;" id="lazy-load" camera-controls touch-action="pan-y" reveal="manual"
     src="Avocado.glb" alt="">
     <div id="lazy-load-poster" slot="poster"></div>
-    <div id="button-load" slot="poster">Load 3D Model</div>
+    <div id="button-load" slot="poster">LOAD MODEL</div>
   </model-viewer>
-
-  <script>
-    //function openFileOption() {
-    //  document.getElementById("file1").click();
-    //}
-    document.querySelector('#button-load').addEventListener('click',
-      () => document.querySelector('#lazy-load').dismissPoster());
-  </script>
   <!--<input type="file" id="file1" style="display:none">
   <a href="#" onclick="openFileOption();return;">open File Dialog</a>-->
+  <script>
+    //function modelselect(url) {
+    //  document.getElementById('lazy-load').src = url;
+    //}
+    //function LoadMDL(url) {
+    //var url = $('myfile').value;
+    //$('lazy-load').setAttribute('src', url);
+    //}
+    //function LoadMDL(url){
+    // let submit = document.getElementById("#lazy-load").src=document.getElementById("#myfile").value;      }
+    document.querySelector('#button-load').addEventListener('click', 
+        () => document.querySelector('#lazy-load').dismissPoster());
+    //document.querySelector('#button-load').addEventListener('submit', 
+    //  () => document.querySelector('#lazy-load').dismissPoster());
+      </script>
 </body>
-
 </html>
