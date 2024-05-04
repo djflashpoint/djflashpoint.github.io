@@ -3,41 +3,30 @@
 
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/22.css">
     <title>h4x0r$</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/css/jquery.terminal.min.css"/>
   </head>
   <body>
-    <!--content goes here-->
-    <script>
-    $('body').terminal({
-        sudo: function(what) {
-            this.echo('gr33t1ng$, ' + what +
-                      '. w3lc0m3 t0 th3 fl4shp01nt t3rm1n4l. https://djflashpoint.github.io/m2.html');
-        },
-        time: function (what) {
-        const d = new Date();
-        let time = d.getTime();;
-      }
-        
-    }, {
-        greetings: 'fl4shp01nt t3rm1n4l'
-    });
-    $('body').terminal({
-    title: function(...args) {
-        const options = $.terminal.parse_options(args);
-        return fetch(options.url || 'https://terminal.jcubic.pl')
+<script>
+  $('body').terminal({
+    start: function() {
+        return $(`<img src="/img/SO.gif">`);
+    },
+    help: function() {
+        return fetch('https://terminal.jcubic.pl')
             .then(r => r.text())
             .then(html => html.match(/<title>([^>]+)<\/title>/)[1]);
-    }
+    },
+    m: function() {
+        return $('<iframe frameBorder="0" src="m.html" width="100%" height="800">');
+    },
 }, {
     checkArity: false,
-    greetings: 'My First Terminal\n'
+    greetings: 'h4x0r$\n'
 });
-
-    </script>
+</script>
   </body>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@djflashpoint">
