@@ -60,12 +60,17 @@
         await term.echo("neo");
         await term.echo("ls");
         await term.echo("clock");
+        await term.echo("dir");
       },
       clock: async function () {
         var start = new Date;
         setInterval(function () {
           $('.Timer').text((new Date - start) / 1000 + " Seconds");
         }, 1000), await term.update(1, start);
+      },
+      dir: function() {
+        return fetch('sitemap.xml')
+        .then(r => r.text());
       },
     }
       , {
