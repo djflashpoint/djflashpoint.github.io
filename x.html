@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <title>h4x0r$</title>
-    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/js/jquery.terminal.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/css/jquery.terminal.min.css"/>
-  </head>
-  <body>
-<script>
-  const term = $('body').terminal({
-    start: function() {
+<head>
+  <meta charset="utf-8">
+  <title>h4x0r$</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/js/jquery.terminal.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/css/jquery.terminal.min.css" />
+</head>
+
+<body>
+  <script>
+    const term = $('body').terminal({
+      start: function () {
         return $(`<img src="/img/SO.gif">`);
-    },
-    about: function() {
+      },
+      about: function () {
         return fetch('https://terminal.jcubic.pl')
-            .then(r => r.text())
-            .then(html => html.match(/<title>([^>]+)<\/title>/)[1]);
-    },
-    m: function() {
+          .then(r => r.text())
+          .then(html => html.match(/<title>([^>]+)<\/title>/)[1]);
+      },
+      m: function () {
         return $(`<iframe src="m.html" width="100%" height="100%">`);
-          //return open("m.html");
-    },
-    time: function () {
-      const now = new Date();
-      const currentDateTime = now.toLocaleString();
-      //console.log(currentDateTime);
-      //setInterval(currentDateTime, 1000);
-      return (currentDateTime);
-    },
-    micro: function() {
-      return $(`<iframe src="micro" width="100%" height="800">`);
-      //return open("micro");
-    },
-    microext: function() {
-      //return $(`<iframe src="micro" width="100%" height="800">`);
-      return open("micro");
-    },
-    neo: async function() {
-    await term.echo("Wake up, Neo...", { typing: true, delay: 200 });
-    term.remove_line(-1)
-    await term.echo("The Matrix has you...", { typing: true, delay: 200 });
-    term.remove_line(-1)
-    await term.echo("Follow the white rabbit.", { typing: true, delay: 200 });
-    term.remove_line(-1)
-    await term.echo("Knock, knock, Neo.", { typing: true, delay: 200 });
-    term.remove_line(-1)
-},
-    ls: async function() {
-      await term.echo("List of Commands:");
-      await term.echo("start");
-      await term.echo("about");
-      await term.echo("m");
-      await term.echo("time");
-      await term.echo("micro");
-      await term.echo("microext");
-      await term.echo("neo");
-      await term.echo("ls");
-      await term.echo("clock");
-    },
-    clock: async function () {
-      var start = new Date;
-      setInterval(function () {
-        $('.Timer').text((new Date - start) / 1000 + " Seconds");
-      }, 1000), await term.update(1, start);
-      
-    },
+        //return open("m.html");
+      },
+      time: function () {
+        const now = new Date();
+        const currentDateTime = now.toLocaleString();
+        //console.log(currentDateTime);
+        //setInterval(currentDateTime, 1000);
+        return (currentDateTime);
+      },
+      micro: function () {
+        return $(`<iframe src="micro" width="100%" height="800">`);
+        //return open("micro");
+      },
+      microext: function () {
+        //return $(`<iframe src="micro" width="100%" height="800">`);
+        return open("micro");
+      },
+      neo: async function () {
+        await term.echo("Wake up, Neo...", { typing: true, delay: 200 });
+        term.remove_line(-1)
+        await term.echo("The Matrix has you...", { typing: true, delay: 200 });
+        term.remove_line(-1)
+        await term.echo("Follow the white rabbit.", { typing: true, delay: 200 });
+        term.remove_line(-1)
+        await term.echo("Knock, knock, Neo.", { typing: true, delay: 200 });
+        term.remove_line(-1)
+      },
+      ls: async function () {
+        await term.echo("List of Commands:");
+        await term.echo("start");
+        await term.echo("about");
+        await term.echo("m");
+        await term.echo("time");
+        await term.echo("micro");
+        await term.echo("microext");
+        await term.echo("neo");
+        await term.echo("ls");
+        await term.echo("clock");
+      },
+      clock: async function () {
+        var start = new Date;
+        setInterval(function () {
+          $('.Timer').text((new Date - start) / 1000 + " Seconds");
+        }, 1000), await term.update(1, start);
+      },
     }
-, {
-    checkArity: false,
-    greetings: 'h4x0r$ - "ls" for list of commands\n'
-});
-</script>
-  </body>
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@djflashpoint">
-  <meta name="twitter:creator" content="@djflashpoint">
-  <meta name="twitter:title" content="h4x0r$">
-  <meta name="twitter:description" content="h4x0r$">
-  <meta name="twitter:image" content="https://djflashpoint.github.io/img/matrix.png">
+      , {
+        checkArity: false,
+        greetings: 'h4x0r$ - "ls" for list of commands\n'
+      });
+  </script>
+</body>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@djflashpoint">
+<meta name="twitter:creator" content="@djflashpoint">
+<meta name="twitter:title" content="h4x0r$">
+<meta name="twitter:description" content="h4x0r$">
+<meta name="twitter:image" content="https://djflashpoint.github.io/img/matrix.png">
+
 </html>
