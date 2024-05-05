@@ -1,0 +1,25 @@
+{
+    "name": "micro",
+    "title": "jQuery Micro",
+    "description": "jQuery Micro is Pico/Nano like editor",
+    "version": "0.1.5",
+    "keywords": [
+        "editor", "terminal", "console", "keyboard", "type", "input", "ui", "widget"
+    ],
+    "author": {
+        "name": "Jakub Jankiewicz",
+        "email": "jcubic@onet.pl",
+        "url": "http://jcubic.pl"
+    },
+    "licenses": [{
+        "type": "GPLv3",
+        "url": "http://www.gnu.org/copyleft/gpl.html"
+    }],
+    "homepage": "http://micro.jcubic.pl/",
+    "demo": "http://micro.jcubic.pl/#demo",
+    "bugs": "https://github.com/jcubic/micro/issues",
+    "download": "https://github.com/jcubic/jquery.micro/archive/0.1.5.zip",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
