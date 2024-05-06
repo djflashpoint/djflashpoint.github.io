@@ -72,11 +72,11 @@
           $('.Timer').text((new Date - start) / 1000 + " Seconds");
         }, 1000), await term.update(1, start);
       },
-      dir: function() {
+      dir: function () {
         return fetch('sitemap.xml')
-        .then(r => r.text());
+          .then(r => r.text());
       },
-      exit: function() {
+      exit: function () {
         return close()
       },
     }
