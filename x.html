@@ -9,11 +9,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/css/jquery.terminal.min.css" />
 </head>
 
-<body style="background-color: black;@media screen and (min-width: 1200px) {
+<body style="@media screen and (min-width: 1200px) {
   :root {
       --size: 1.4;
-  }
-}">
+  }}
+  html, body {
+    background-color: black;
+    }">
   <script>
     const term = $('body').terminal({
       start: function () {
