@@ -65,6 +65,7 @@
         await term.echo("ls");
         await term.echo("clock");
         await term.echo("dir");
+        await term.echo("exit");
       },
       clock: async function () {
         var start = new Date;
@@ -82,12 +83,7 @@
     }
       , {
         checkArity: false,
-        greetings: 'h4x0r$ - "ls" for list of commands\n',
-        keymap: {
-            'CTRL+L': function(e, original) {
-              clear();
-            }
-       }
+        greetings: 'h4x0r$ - "ls" for list of commands\n'
       });
   </script>
 </body>
