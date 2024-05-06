@@ -76,10 +76,18 @@
         return fetch('sitemap.xml')
         .then(r => r.text());
       },
+      exit: function() {
+        return close()
+      },
     }
       , {
         checkArity: false,
-        greetings: 'h4x0r$ - "ls" for list of commands\n'
+        greetings: 'h4x0r$ - "ls" for list of commands\n',
+        keymap: {
+            'CTRL+L': function(e, original) {
+              clear();
+            }
+       }
       });
   </script>
 </body>
