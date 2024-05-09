@@ -42,6 +42,10 @@
         //return $(`<iframe src="micro" width="100%" height="800">`);
         return open("micro");
       },
+      stream: function () {
+        //return $(`<iframe src="micro" width="100%" height="800">`);
+        return open("stream.html");
+      },
       neo: async function () {
         await term.echo("Wake up, Neo...", { typing: true, delay: 200 });
         term.remove_line(-1)
