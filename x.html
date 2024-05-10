@@ -6,6 +6,7 @@
   <title>h4x0r$</title>
   <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/js/jquery.terminal.min.js"></script>
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/css/jquery.terminal.min.css" />
 </head>
 
@@ -62,6 +63,19 @@
         await term.echo("Knock, knock, Neo.", { typing: true, delay: 200 });
         term.remove_line(-1)
       },
+      foo: async function () {
+        await term.echo("Damn, foo...", { typing: true, delay: 200 });
+        term.remove_line(-1);
+        await term.echo("*cholo whistle*", { typing: true, delay: 100 });
+        term.remove_line(-1);
+        await term.echo("Thats a sick ride, eh.", { typing: true, delay: 200 });
+        term.remove_line(-1);
+        await term.echo("Youre invited to the carne asada, carnal.", { typing: true, delay: 200 });
+        term.remove_line(-1);
+        await term.echo("Sana sana colita de rana", { typing: true, delay: 200 });
+        term.remove_line(-1);
+        await term.echo("*cholo whistle*", { typing: true, delay: 100 });
+      },
       ls: async function () {
         await term.echo("List of Commands:");
         await term.echo("start");
@@ -79,10 +93,9 @@
         await term.echo("exit");
       },
       clock: async function () {
-        var start = new Date;
-        setInterval(function () {
-          $('.Timer').text((new Date - start) / 1000 + " Seconds");
-        }, 1000), await term.update(1, start);
+        setInterval( async function () {
+          await term.update (1, new Date);
+        }, 1000);
       },
       dir: function () {
         return fetch('sitemap.xml')
