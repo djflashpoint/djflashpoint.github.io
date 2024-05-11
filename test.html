@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Test</title>
-    
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
     <style>
         html,
         body {
@@ -13,36 +13,21 @@
             color: grey;
             text-align: center;
             display: table;
-            font-size: calc(10vw + .5rem);
+            font-size: 2em;
             overflow: hidden;
             width: 100vw;
             height: 100vh;
             position: absolute;
         }
-
     </style>
 </head>
 
 <body>
-    <span id="time"></span>
-    <script> type = "text/javascript"
-        var span = document.getElementById('time');
-
-            function time() {
-                var d = new Date();
-                var a = d.getDay();
-                var b = d.getMonth();
-                var c = d.getFullYear();
-                var s = d.getSeconds();
-                var m = d.getMinutes();
-                var h = d.getHours();
-                span.innerText =
-                ("0" + a).substr(-2) + "/" + ("0" + b).substr(-2) + "/" + ("0" + c).substr(-2) + '\n' +
-                ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
-            }
-
-            setInterval(time, 1000);
-        
+    <p id="clock"></p>
+    <script> type = "text/javascript">
+        setInterval(function () {
+        document.getElementById("clock").innerHTML = document.title = new Date;
+        }, 1000);
     </script>
 
 </body>
