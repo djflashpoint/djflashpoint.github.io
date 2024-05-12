@@ -1,0 +1,78 @@
+        /* Set height of body and the document to 100% to enable "full page tabs" */
+        @media screen and (min-width: 1800px) {
+            :root {
+                --size: 1.4;
+            }}
+        
+        body,
+        html {
+            height: 100vh;
+            width: 100vw;
+            display: block;
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            text-align: center;
+            background-color: black;
+            overflow: hidden;
+            font-size: 2vw;
+            max-width:100%;
+            max-height: 100%;
+        }
+        h1 {
+            color: white;
+            cursor: crosshair;
+        }
+        h3 {
+            margin: 0;
+        }
+
+        /* Style tab links */
+        .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: crosshair;
+            padding: 20px 20px;
+            width: 25%;
+            font-size: 3vw;
+            
+        }
+
+        .tablink:hover {
+            background-color: #777;
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+
+            color: white;
+            text-align: center;
+            height: 82.8vh;
+            width: 100vw;
+            cursor: crosshair;
+            resize: both;
+            font-size: 3vw;
+            overflow: hidden;
+            border:none;
+        }
+      
+
+        #Home {
+            background-color: orange;
+            
+        }
+
+        #adsb {
+            background-color: green;
+        }
+
+        #pp {
+            background-color: red;
+        }
+
+        #nws {
+            background-color: blue;
+        }
