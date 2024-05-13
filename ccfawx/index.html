@@ -23,9 +23,7 @@
 </head>
 
 <body>
-    <h1>Clark County Fire Aircraft Weather Tracking</h1>
-
-    <button class="tablink" onclick="openPage('Home', this, 'orange')">«ďĵƒLÅSĥpōįnŧ»</button>
+    <button class="tablink" onclick="openPage('Home', this, 'black')">«ďĵƒLÅSĥpōįnŧ»</button>
     <button class="tablink" onclick="openPage('adsb', this, 'green')" id="defaultOpen">ADS-B</button>
     <button class="tablink" onclick="openPage('pp', this, 'red')">PulsePoint</button>
     <button class="tablink" onclick="openPage('nws', this, 'blue')">NWS Radar</button>
@@ -36,23 +34,19 @@
 
 
     <div id="Home" class="tabcontent">
-        <h3>«ďĵƒLÅSĥpōįnŧ»</h3>
-        <iframe src="/../index.html" height="100%" width="100%"></iframe>
+        <iframe src="/../index.html" height="95%" width="95%" frameBorder="0"></iframe>
     </div>
 
     <div id="adsb" class="tabcontent">
-        <h3>ADS-B</h3>
-        <iframe src="adsb.html" height="100%" width="100%"></iframe>
+        <iframe src="adsb.html" height="95%" width="95%" frameBorder="0"></iframe>
     </div>
 
     <div id="pp" class="tabcontent">
-        <h3>PulsePoint</h3>
-        <iframe src="pp.html" height="100%" width="100%"></iframe>
+        <iframe src="pp.html" height="95%" width="95%" frameBorder="0"></iframe>
     </div>
 
     <div id="nws" class="tabcontent">
-        <h3>NWS Radar</h3>
-        <iframe src="nwsradar.html" height="100%" width="100%"></iframe>
+        <iframe src="nwsradar.html" height="95%" width="95%" frameBorder="0"></iframe>
     </div>
 
 
@@ -83,7 +77,7 @@
 
 
         document.getElementById("defaultOpen").click();
-
+        
     </script>
 </body>
 
