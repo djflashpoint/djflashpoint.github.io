@@ -1,22 +1,25 @@
         /* Set height of body and the document to 100% to enable "full page tabs" */
-        @media screen and (min-width: 500px) {
-            :root {
-                height: 100vh;
-            }
-        }
-
-        body, html {
+        body,
+        html {
             font-family: Arial;
             text-align: center;
             background-color: black;
+            background-size: auto;
             overflow: scroll;
             scrollbar-width: none;
             position: relative;
-            padding-bottom: 0;
-            height: 100vh;
-            top:0; bottom:0; right:0; left:0;
-            padding:0;
-            margin: 0 auto;
+            height: 100%;
+            margin: 0;
+        }
+
+        iframe {
+            height: 93%;
+            width: 100%;
+            transform: scale(0.98, 0.98);
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            margin: 0;
         }
 
         /* Style tab links */
@@ -26,11 +29,9 @@
             float: left;
             border: 1px black solid;
             outline: none;
-            cursor: crosshair;
-            padding: 1em;
+            padding: 15px;
             width: 25%;
-            font-size: 2vw;
-
+            font-size: 2.5vw;
         }
 
         .tablink:hover {
@@ -41,12 +42,9 @@
         /* Style the tab content (and add height:100% for full page content) */
         .tabcontent {
             color: white;
-            text-align: center;
-            cursor: crosshair;
             height: 100%;
+            width: 100%;
             margin: 0;
-            padding: 0;
-            border: 0;
         }
 
         #Home {
