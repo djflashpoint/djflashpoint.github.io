@@ -5,30 +5,39 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
-    <title id="tt">
+    <title>
+
     </title>
-    
+
     <style>
         html,
         body {
             background-color: black;
             color: grey;
             text-align: center;
-            display: table;
-            font-size: calc(10vw + .5rem);
-            overflow: hidden;
+            overflow: auto;
+            scrollbar-width: none;
             width: 100vw;
             height: 100vh;
-            position: absolute;
         }
 
+        .time {
+            width: 100%;
+            height: 100%;
+            font-size: 10vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: scale(1, 1);
+        }
     </style>
 </head>
 
-<body>
-    <span id="time"></span>
-    <script> type = "text/javascript"
-        var span = document.getElementById('time');
+<body onload="clock()">
+    <!--<span id="time"></span> -->
+    <div class="time" id="time"></div>
+    <script>
+        /* var span = document.getElementById('time');
 
             function time() {
                 var d = new Date();
@@ -43,8 +52,12 @@
                 ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
             }
 
-            setInterval(time, 1000);
-        
+            setInterval(time, 1000); */
+        function clock() {
+            setInterval(function () {
+                document.getElementById('time').innerText = document.title = new Date();
+            }, 1000);
+        }
     </script>
 
 </body>
