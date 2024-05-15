@@ -13,10 +13,12 @@
 
 html {
   background-color: black;
+  width: 100vw;
+  height: 100vh;
 
 }
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -42,11 +44,12 @@ body {
   line-height: 1.3;
   margin: 1rem 0;
   text-align: center;
+  width: 100vw;
 }
 
 .wrap
 {
-    width: 100%;
+    width: 100vw;
     height: 720px;
     padding: 0;
     overflow: hidden;
@@ -81,15 +84,17 @@ body {
   width: 100%;
 }
 
-.iframe-container iframe {
+.iframe-container, iframe {
    border: 0;
-   height: 100%;
+   background-color: black;
+   height: 100vw;
    left: 0;
-   position: absolute;
+   position: relative;
    top: 0;
-   width: 100%;
-   -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+   bottom: 0;
+   width: 100vw;
+   -webkit-transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
 }
@@ -257,7 +262,7 @@ body {
 
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid .08em #eee;
+  border: solid .08em #000000;
   border-radius: .1em
 }
 
