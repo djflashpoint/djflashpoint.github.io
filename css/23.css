@@ -90,8 +90,8 @@ body {
    background-color: black;
    height: 100vw;
    width: 100vw;
-   -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+   -webkit-transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: center 0;
     transform-origin: center 0;
 }
