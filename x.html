@@ -4,13 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>h4x0r$</title>
-  <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jcubic/static/js/wcwidth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-polyfills/keyboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/unix_formatting.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.8.1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/less.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/figlet/lib/figlet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lolcatjs@2.4.3/index.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/js/jquery.terminal.min.js"></script>
-  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/css/jquery.terminal.min.css" />
 </head>
 
-<body style="@media screen and (min-width: 1200px) {
+<body onload="lolcatjs()" style="@media screen and (min-width: 1200px) {
   :root {
       --size: 1.4;
   }} background-color: black;">
@@ -28,8 +37,17 @@
           .then(r => r.text())
           .then(html => html.match(/<title>([^>]+)<\/title>/)[1]);
       },
-      rabbit: function () {
-        return $(`<iframe src="m.html" width="100%" height="800">`);
+      rabbit: async function () {
+        await term.echo("Wake up, Neo...", { typing: true, delay: 200 });
+        term.remove_line(-1)
+        await term.echo("The Matrix has you...", { typing: true, delay: 200 });
+        term.remove_line(-1)
+        await term.echo("Follow the white rabbit.", { typing: true, delay: 200 });
+        term.remove_line(-1)
+        await term.echo("Knock, knock, Neo.", { typing: true, delay: 200 });
+        term.remove_line(-1)
+        await open("m.html");
+        /* return $(`<iframe src="m.html" width="100%" height="800">`); */
         //return open("m.html");
       },
       time: function () {
@@ -62,6 +80,7 @@
         term.remove_line(-1)
         await term.echo("Knock, knock, Neo.", { typing: true, delay: 200 });
         term.remove_line(-1)
+        await open("m.html");
       },
       foo: async function () {
         await term.echo("Damn, foo...", { typing: true, delay: 200 });
@@ -80,7 +99,8 @@
         await term.echo("List of Commands:", { typing: true, delay: 50 });
         await term.echo("start", { typing: true, delay: 50 });
         await term.echo("about", { typing: true, delay: 50 });
-        await term.echo("m", { typing: true, delay: 50 });
+        await term.echo("rabbit", { typing: true, delay: 50 });
+        await term.echo("figlet", { typing: true, delay: 50 });
         await term.echo("time", { typing: true, delay: 50 });
         await term.echo("micro", { typing: true, delay: 50 });
         await term.echo("microext", { typing: true, delay: 50 });
@@ -94,8 +114,8 @@
         await term.echo("exit", { typing: true, delay: 50 });
       },
       clock: async function () {
-        setInterval( async function () {
-          await term.update (1, new Date);
+        setInterval(async function () {
+          await term.update(1, new Date);
         }, 1000);
       },
       dir: async function () {
@@ -110,14 +130,27 @@
 
 
       },
-      exit: function () {
-        return close()
+
+      figlet: async function () {
+        await open('figlet');
       },
-    }
-      , {
+      exit: async function () {
+        await close();
+        await window.home();
+      },
+    }, 
+      {
         checkArity: false,
         greetings: 'h4x0r$ - "ls" for list of commands\n'
       });
+  </script>
+  <script>
+    const lolcatjs = require('lolcatjs');
+
+lolcatjs.options.seed = Math.round(Math.random() * 1000);
+lolcatjs.options.colors = true;
+
+lolcatjs.fromString('I can has Cheezburger?');
   </script>
 </body>
 <meta name="twitter:card" content="summary_large_image">

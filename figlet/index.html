@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jcubic/static/js/wcwidth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-polyfills/keyboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/unix_formatting.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.8.1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/less.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/figlet/lib/figlet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lolcatjs@2.4.3/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/css/jquery.terminal.min.css" />
+</head>
+
+<body style="@media screen and (min-width: 1200px) {
+        :root {
+            --size: 1.4;
+        }} background-color: black;">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <script>
+        figlet.defaults({ fontPath: 'https://unpkg.com/figlet/fonts/' });
+        figlet.preloadFonts(['Standard', 'Slant'], ready);
+
+        var term;
+
+        function ready() {
+            term = $('body').terminal(function (cmd) {
+
+                // echo function will run it in each render,
+                // so text can be resized based on cols
+                this.echo(() => render(this, cmd));
+            }, {
+                greetings: false,
+                onInit() {
+                 this.echo(() => render(this, 'h4x0r$ by djflashpoint', 'Slant'))
+                 return $(document).text('title', figlet.text);
+                }
+            });
+        }
+        function render(term, text, font) {
+            const cols = term.cols();
+            return figlet.textSync(text, {
+                font: font || 'Standard',
+                width: cols,
+                whitespaceBreak: true
+            });
+        }
+        const lolcatjs = require('lolcatjs');
+
+lolcatjs.options.seed = Math.round(Math.random() * 1000);
+lolcatjs.options.colors = true;
+
+lolcatjs.fromString('I can has Cheezburger?');
+    </script>
+</body>
+
+</html>
