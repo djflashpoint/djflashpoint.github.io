@@ -270,5 +270,4 @@ function mandelbrot() {
 }
 async function exit() {
         await close();
-        await window.home();
 }
