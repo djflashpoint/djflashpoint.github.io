@@ -202,27 +202,14 @@ class Timer {
 }
 
 // -----------------------------------------------------------------------------
-/*  function time(date) {
+function time(date) {
     return date.toLocaleTimeString();
     return [
         date.getHours(),
         date.getMinutes(),
         date.getSeconds()
     ].join(':');
-}  */
-
-/* function time() {
-    setInterval(function () {
-        document.getElementById('time').innerText = document.title = new Date();
-    }, 1000);
-} */
-
- function time() {
-    setInterval(async function () {
-      return term.update(1, new Date());
-    }, 1000);
-  }
- 
+}
 
 // -----------------------------------------------------------------------------
 function renderFiglet(text, font, width) {
