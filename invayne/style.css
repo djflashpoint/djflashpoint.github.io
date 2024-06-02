@@ -1,0 +1,62 @@
+body				{color: #8a8a8a; font-family: verdana; font-size: 10px;}
+td					{color: #8a8a8a; font-family: verdana; font-size: 10px;}
+a:link				{color: #8a8a8a; font-family: verdana; text-decoration: none}
+a:visited			{color: #8a8a8a; font-family: verdana; text-decoration: none} 
+a:active			{color: #8a8a8a; font-family: verdana; text-decoration: underline} 
+a:hover				{color: #8a8a8a; font-family: verdana; text-decoration: underline}
+
+body				{
+					cursor: default;
+					margin-left: 0px;
+					margin-top: 0px;
+					margin-right: 0px;
+					margin-bottom: 0px;
+					background-color: #111111;
+					}
+
+
+.belowheader	{color: #ffffff; font-family: verdana; font-size: 11px; font-weight: bold;}
+
+
+
+.menu {
+border-top: 0px;
+border-bottom: 0px;
+border: 1px solid #ffffff;
+}
+
+
+.content {
+border-top: 1px solid #ffffff;
+border-left: 1px solid #ffffff;
+border-right: 1px solid #ffffff;
+border-bottom: 0px;
+}
+
+.disco-small {
+font-size: 9px;
+}
+
+.titles {
+color: #ffffff; font-family: verdana; font-size: 11px; font-weight: bold; height: 17px; vertical-align: middle; text-align: center; background-color: #111111;
+}
+/*
+     FILE ARCHIVED ON 12:55:51 Dec 28, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:45:47 Jun 02, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.545
+  exclusion.robots: 0.077
+  exclusion.robots.policy: 0.071
+  esindex: 0.007
+  cdx.remote: 17.634
+  LoadShardBlock: 197.299 (3)
+  PetaboxLoader3.resolve: 196.857 (4)
+  PetaboxLoader3.datanode: 60.804 (4)
+  load_resource: 110.391
+*/
