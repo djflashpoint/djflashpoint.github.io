@@ -1,0 +1,22 @@
+body, html				{
+  cursor: not-allowed;
+  text-align: center;
+  width: 100vw;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  background-color: #111111;
+  color: #8a8a8a; font-family: verdana; font-size: 30px;
+  }
+
+td, tr					{border: none;
+  margin: 0px;
+  background-size: 25% 100%;
+  background-repeat: no-repeat;
+  background-position: center; color: #8a8a8a; font-family: verdana; font-size: 30px;}
+a:link				{color: #8a8a8a; font-family: verdana; text-decoration: none}
+a:visited			{color: #8a8a8a; font-family: verdana; text-decoration: none} 
+a:active			{color: #8a8a8a; font-family: verdana; text-decoration: underline} 
+a:hover				{color: #8a8a8a; font-family: verdana; text-decoration: underline}
+
