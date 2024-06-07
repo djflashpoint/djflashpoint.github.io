@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>h4x0r$</title>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/jcubic/static/js/wcwidth.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-polyfills/keyboard.js"></script>
@@ -12,33 +12,23 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.8.1/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/less.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/figlet/lib/figlet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/cowsay@1.4.0/build/cowsay.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/pipe.js"></script>
-    <script src="https://unpkg.com/isomorphic-lolcat@0.x.x"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/xml_formatting.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/lolcatjs@2.4.3/index.min.js"></script> -->
-    <script src="test.js"></script>
-    <link href="https://unpkg.com/prismjs/themes/prism-coy.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/gh/jcubic/jquery.terminal@devel/css/jquery.terminal.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.41.1/css/jquery.terminal.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body style="@media screen and (min-width: 1200px) {
-  :root {
-      --size: 1.4;
-  }} background-color: black;">
+<body>
   <script>
     const term = $('body').terminal({
       ccfawx: async function () {
-          await open("ccfawx");
+          await open("/../ccfawx");
         },
       start: async function () {
         async function load() {
-          await open("defcon.html");
+          await open("/../defcon.html");
         }
         setTimeout(load, 5000);
-        return $(`<img src="/img/SO.gif">`)
+        return $(`<img src="/../img/SO.gif">`)
       },
       about: function () {
         return fetch('https://terminal.jcubic.pl')
@@ -47,10 +37,14 @@
       },
       rabbit: async function () {
         await term.echo("Wake up, Neo...", { typing: true, delay: 200, newline: false });
+        term.remove_line(-1);
         await term.echo("The Matrix has you...", { typing: true, delay: 200, newline: false });
+        term.remove_line(-1);
         await term.echo("Follow the white rabbit.", { typing: true, delay: 200, newline: false });
+        term.remove_line(-1);
         await term.echo("Knock, knock, Neo.", { typing: true, delay: 200, newline: false });
-        return $(`<iframe src="m.html" width="100%" height="800">`);
+        term.remove_line(-1);
+        return $(`<iframe src="/../m.html" width="100%" height="800">`);
         //return open("m.html");
       },
       time: function () {
@@ -61,25 +55,29 @@
         return (currentDateTime);
       },
       micro: function () {
-        return $(`<iframe src="micro" width="100%" height="800">`);
+        return $(`<iframe src="/../micro" width="100%" height="800">`);
         //await open("micro");
        },
       microext: async function () {
         //return $(`<iframe src="micro" width="100%" height="800">`);
-         await open("micro");
+         await open("/../micro");
       },
       stream: function () {
-        return $(`<iframe src="stream.html" width="100%" height="800">`);
+        return $(`<iframe src="/../stream.html" width="100%" height="80%">`);
       },
       streamext: async function () {
-        await open("stream.html");
+        await open("/../stream.html");
       },
       neo: async function () {
         await term.echo("Wake up, Neo...", { typing: true, delay: 200, newline: false });
+        term.remove_line(-1);
         await term.echo("The Matrix has you...", { typing: true, delay: 200, newline: false });
+        term.remove_line(-1);
         await term.echo("Follow the white rabbit.", { typing: true, delay: 200, newline: false });
+        term.remove_line(-1);
         await term.echo("Knock, knock, Neo.", { typing: true, delay: 200, newline: false });
-        await open("m.html");
+        term.remove_line(-1);
+        await open("/../m.html");
       },
       foo: async function () {
         await term.echo("Damn, foo...", { typing: true, delay: 200 });
@@ -112,6 +110,9 @@
         await term.echo("clock", { typing: true, delay: 50 });
         await term.echo("dir", { typing: true, delay: 50 });
         await term.echo("exit", { typing: true, delay: 50 });
+        await term.echo("invayne", { typing: true, delay: 50 });
+        await term.echo("fplayer", { typing: true, delay: 50 });
+        await term.echo("wx", { typing: true, delay: 50 });
       },
       clock: async function () {
         setInterval(async function () {
@@ -119,7 +120,7 @@
         }, 1000);
       },
       dir: async function () {
-        return fetch("sitemap.xml").then(r => r.text());
+        return fetch("/../sitemap.xml").then(r => r.text());
         //await term.echo(fetch("/").then(r => r.text()), { typing: true, delay: 50 });
 
         //var xml = $.parseXML("sitemap.xml"),
@@ -131,13 +132,13 @@
 
       },
       invayne: async function () {
-        await open('invayne');
+        await open('/../invayne');
       },
       wx: async function () {
-        await open('wx');
+        await open('/../wx');
       },
       fplayer: async function () {
-        await open('fplayer');
+        await open('/../fplayer');
       },
 
 
