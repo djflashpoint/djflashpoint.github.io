@@ -1,25 +1,22 @@
         /* Set height of body and the document to 100% to enable "full page tabs" */
-        body,
-        html {
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: auto;
+            height: 100dvh;
+            min-width: min-content;
+            box-sizing: border-box;
+            justify-content: space-around;
+            overflow:hidden;
             font-family: Arial;
             text-align: center;
             background-color: black;
             background-size: auto;
-            overflow: scroll;
-            scrollbar-width: none;
-            position: relative;
-            height: 100%;
-            margin: 0;
         }
 
         iframe {
-            height: 93%;
+            height: 100%;
             width: 100%;
-            transform: scale(0.98, 0.98);
-            display: flex;
-            flex-direction: row;
-            flex-grow: 1;
-            margin: 0;
         }
 
         /* Style tab links */
@@ -44,6 +41,7 @@
             color: white;
             height: 100%;
             width: 100%;
+            padding: 0;
             margin: 0;
         }
 
