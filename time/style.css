@@ -9,7 +9,7 @@ html, body {
             text-align: center;
                 margin: 0;
                 padding: 0;
-                width: auto;
+                width: 100dvw;
                 height: 100dvh;
                 min-width: min-content;
                 box-sizing: border-box;
@@ -26,6 +26,7 @@ html, body {
             font-size: 10vw;
             font-family: O24D;
             display: flex;
+            flex-grow: 1;
             justify-content: center;
             align-items: center;
             transform: scale(1, 1);
