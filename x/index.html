@@ -113,10 +113,12 @@
         await term.echo("invayne", { typing: true, delay: 50 });
         await term.echo("fplayer", { typing: true, delay: 50 });
         await term.echo("wx", { typing: true, delay: 50 });
+        await term.echo("solitaire", { typing: true, delay: 50 });
       },
       clock: async function () {
+        await term.reset();
         setInterval(async function () {
-          await term.update(1, new Date);
+          await term.update(0, new Date);
         }, 1000);
       },
       dir: async function () {
@@ -143,6 +145,10 @@
       solitaire: async function () {
          await open("/../solitaire");
       },
+      clear: async function () {
+        await term.clear();
+      },
+
 
 
 
