@@ -41,4 +41,4 @@ function bgmStop() {
     
     
 const mutag = window.mutag;
-mutag.fetch(audiosrc).then((tags) => {console.log(tags) = document.title;});
+mutag.fetch(station).then((tags) => {console.log(tags);});
