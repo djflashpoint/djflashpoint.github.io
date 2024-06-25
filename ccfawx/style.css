@@ -1,65 +1,64 @@
-        /* Set height of body and the document to 100% to enable "full page tabs" */
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: auto;
-            height: 100dvh;
-            min-width: min-content;
-            box-sizing: border-box;
-            justify-content: space-around;
-            overflow:hidden;
-            font-family: Arial;
-            text-align: center;
-            background-color: black;
-            background-size: auto;
-        }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100dvh;
+    min-width: min-content;
+    box-sizing: border-box;
+    justify-content: space-around;
+    overflow:hidden;
+    font-family: Arial;
+    text-align: center;
+    background-color: black;
+    background-size: auto;
+}
 
-        iframe {
-            height: 100%;
-            width: 100%;
-        }
+iframe {
+    height: 100%;
+    width: 100%;
+}
 
-        /* Style tab links */
-        .tablink {
-            background-color: #555;
-            color: black;
-            float: left;
-            border: 1px black solid;
-            outline: none;
-            padding: 15px;
-            width: 20%;
-            font-size: 2.5vw;
-        }
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: black;
+    float: left;
+    border: 1px black solid;
+    outline: none;
+    padding: 15px;
+    width: 20%;
+    font-size: 2.5vw;
+}
 
-        .tablink:hover {
-            background-color: #777;
+.tablink:hover {
+    background-color: #777;
 
-        }
+}
 
-        /* Style the tab content (and add height:100% for full page content) */
-        .tabcontent {
-            color: white;
-            height: 100%;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
-        #Home {
-            background-color: black;
-        }
+#Home {
+    background-color: black;
+}
 
-        #adsb {
-            background-color: green;
-        }
+#adsb {
+    background-color: green;
+}
 
-        #pp {
-            background-color: red;
-        }
+#pp {
+    background-color: red;
+}
 
-        #nws {
-            background-color: blue;
-        }
-        #nws {
-            background-color: yellow;
-        }
+#nws {
+    background-color: blue;
+}
+#nws {
+    background-color: yellow;
+}

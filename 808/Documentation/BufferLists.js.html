@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: BufferLists.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: BufferLists.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//These are arrays of the locations of each file to be added to an instrument's buffers
+
+var BDBufferList = ["TR808WAV/BD/BD0000.WAV", "TR808WAV/BD/BD0025.WAV", "TR808WAV/BD/BD0050.WAV", "TR808WAV/BD/BD0075.WAV", "TR808WAV/BD/BD0010.WAV", "TR808WAV/BD/BD2500.WAV", "TR808WAV/BD/BD2525.WAV", "TR808WAV/BD/BD2550.WAV", "TR808WAV/BD/BD2575.WAV", "TR808WAV/BD/BD2510.WAV", "TR808WAV/BD/BD5000.WAV", "TR808WAV/BD/BD5025.WAV", "TR808WAV/BD/BD5050.WAV", "TR808WAV/BD/BD5075.WAV", "TR808WAV/BD/BD5010.WAV", "TR808WAV/BD/BD7500.WAV", "TR808WAV/BD/BD7525.WAV", "TR808WAV/BD/BD7550.WAV", "TR808WAV/BD/BD7575.WAV", "TR808WAV/BD/BD7510.WAV", "TR808WAV/BD/BD1000.WAV", "TR808WAV/BD/BD1025.WAV", "TR808WAV/BD/BD1050.WAV", "TR808WAV/BD/BD1075.WAV", "TR808WAV/BD/BD1010.WAV"];
+
+var SDBufferList = ["TR808WAV/SD/SD0000.WAV", "TR808WAV/SD/SD0025.WAV", "TR808WAV/SD/SD0050.WAV", "TR808WAV/SD/SD0075.WAV", "TR808WAV/SD/SD0010.WAV", "TR808WAV/SD/SD2500.WAV", "TR808WAV/SD/SD2525.WAV", "TR808WAV/SD/SD2550.WAV", "TR808WAV/SD/SD2575.WAV", "TR808WAV/SD/SD2510.WAV", "TR808WAV/SD/SD5000.WAV", "TR808WAV/SD/SD5025.WAV", "TR808WAV/SD/SD5050.WAV", "TR808WAV/SD/SD5075.WAV", "TR808WAV/SD/SD5010.WAV", "TR808WAV/SD/SD7500.WAV", "TR808WAV/SD/SD7525.WAV", "TR808WAV/SD/SD7550.WAV", "TR808WAV/SD/SD7575.WAV", "TR808WAV/SD/SD7510.WAV", "TR808WAV/SD/SD1000.WAV", "TR808WAV/SD/SD1025.WAV", "TR808WAV/SD/SD1050.WAV", "TR808WAV/SD/SD1075.WAV", "TR808WAV/SD/SD1010.WAV"];
+
+var LTBufferList = ["TR808WAV/LT/LT00.WAV", "TR808WAV/LT/LT25.WAV", "TR808WAV/LT/LT50.WAV", "TR808WAV/LT/LT75.WAV", "TR808WAV/LT/LT10.WAV"];
+
+var MTBufferList = ["TR808WAV/MT/MT00.WAV", "TR808WAV/MT/MT25.WAV", "TR808WAV/MT/MT50.WAV", "TR808WAV/MT/MT75.WAV", "TR808WAV/MT/MT10.WAV"];
+
+var HTBufferList = ["TR808WAV/HT/HT00.WAV", "TR808WAV/HT/HT25.WAV", "TR808WAV/HT/HT50.WAV", "TR808WAV/HT/HT75.WAV", "TR808WAV/HT/HT10.WAV"];
+
+var LCBufferList = ["TR808WAV/LC/LC00.WAV", "TR808WAV/LC/LC25.WAV", "TR808WAV/LC/LC50.WAV", "TR808WAV/LC/LC75.WAV", "TR808WAV/LC/LC10.WAV"];
+
+var MCBufferList = ["TR808WAV/MC/MC00.WAV", "TR808WAV/MC/MC25.WAV", "TR808WAV/MC/MC50.WAV", "TR808WAV/MC/MC75.WAV", "TR808WAV/MC/MC10.WAV"];
+
+var HCBufferList = ["TR808WAV/HC/HC00.WAV", "TR808WAV/HC/HC25.WAV", "TR808WAV/HC/HC50.WAV", "TR808WAV/HC/HC75.WAV", "TR808WAV/HC/HC10.WAV"];
+
+var RSBufferList = ["TR808WAV/RS/RS.WAV"];
+
+var CPBufferList = ["TR808WAV/CP/CP.WAV"];
+
+var CLBufferList = ["TR808WAV/CL/CL.WAV"];
+
+var MABufferList = ["TR808WAV/MA/MA.WAV"];
+
+var CBBufferList = ["TR808WAV/CB/CB.WAV"];
+
+var CYBufferList = ["TR808WAV/CY/CY0000.WAV", "TR808WAV/CY/CY0025.WAV", "TR808WAV/CY/CY0050.WAV", "TR808WAV/CY/CY0075.WAV", "TR808WAV/CY/CY0010.WAV", "TR808WAV/CY/CY2500.WAV", "TR808WAV/CY/CY2525.WAV", "TR808WAV/CY/CY2550.WAV", "TR808WAV/CY/CY2575.WAV", "TR808WAV/CY/CY2510.WAV", "TR808WAV/CY/CY5000.WAV", "TR808WAV/CY/CY5025.WAV", "TR808WAV/CY/CY5050.WAV", "TR808WAV/CY/CY5075.WAV", "TR808WAV/CY/CY5010.WAV", "TR808WAV/CY/CY7500.WAV", "TR808WAV/CY/CY7525.WAV", "TR808WAV/CY/CY7550.WAV", "TR808WAV/CY/CY7575.WAV", "TR808WAV/CY/CY7510.WAV", "TR808WAV/CY/CY1000.WAV", "TR808WAV/CY/CY1025.WAV", "TR808WAV/CY/CY1050.WAV", "TR808WAV/CY/CY1075.WAV", "TR808WAV/CY/CY1010.WAV"];
+
+var OHBufferList = ["TR808WAV/OH/OH00.WAV", "TR808WAV/OH/OH25.WAV", "TR808WAV/OH/OH50.WAV", "TR808WAV/OH/OH75.WAV", "TR808WAV/OH/OH10.WAV"];
+
+var CHBufferList = ["TR808WAV/CH/CH.WAV"];
+
+/**
+ * Array of all the bufffer url arrays (for each instrument)
+ * @type {Array}
+ */
+var BufferLists = [BDBufferList,
+    SDBufferList,
+    LTBufferList.concat(LCBufferList),
+    MTBufferList.concat(MCBufferList),
+    HTBufferList.concat(HCBufferList),
+    RSBufferList.concat(CLBufferList),
+    CPBufferList.concat(MABufferList),
+    CBBufferList,
+    CYBufferList,
+    OHBufferList,
+    CHBufferList
+];
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Instrument.html">Instrument</a></li><li><a href="Knob.html">Knob</a></li><li><a href="MyBufferLoader.html">MyBufferLoader</a></li><li><a href="Switch.html">Switch</a></li><li><a href="TapTempo.html">TapTempo</a></li><li><a href="Timer.html">Timer</a></li></ul><h3>Global</h3><ul><li><a href="global.html#audioContext">audioContext</a></li><li><a href="global.html#beat">beat</a></li><li><a href="global.html#beatTimer">beatTimer</a></li><li><a href="global.html#blankSceneObjStr">blankSceneObjStr</a></li><li><a href="global.html#BufferLists">BufferLists</a></li><li><a href="global.html#changeBeat">changeBeat</a></li><li><a href="global.html#channels">channels</a></li><li><a href="global.html#clearBeatIndicator">clearBeatIndicator</a></li><li><a href="global.html#compressSceneData">compressSceneData</a></li><li><a href="global.html#compressSequence">compressSequence</a></li><li><a href="global.html#controls">controls</a></li><li><a href="global.html#createInstruments">createInstruments</a></li><li><a href="global.html#currentInstrument">currentInstrument</a></li><li><a href="global.html#decompressSceneData">decompressSceneData</a></li><li><a href="global.html#decompressSequence">decompressSequence</a></li><li><a href="global.html#getBufferIndex">getBufferIndex</a></li><li><a href="global.html#incrementLoadingProgress">incrementLoadingProgress</a></li><li><a href="global.html#instruments">instruments</a></li><li><a href="global.html#jMasterVolumeKnob">jMasterVolumeKnob</a></li><li><a href="global.html#jTempoKnob">jTempoKnob</a></li><li><a href="global.html#knobbify">knobbify</a></li><li><a href="global.html#leds">leds</a></li><li><a href="global.html#leftPad">leftPad</a></li><li><a href="global.html#LOAD_TOTAL">LOAD_TOTAL</a></li><li><a href="global.html#loadCount">loadCount</a></li><li><a href="global.html#loadFromObject">loadFromObject</a></li><li><a href="global.html#loadScene">loadScene</a></li><li><a href="global.html#makeKnob">makeKnob</a></li><li><a href="global.html#makeSwitch">makeSwitch</a></li><li><a href="global.html#masterVolume">masterVolume</a></li><li><a href="global.html#modeButtons">modeButtons</a></li><li><a href="global.html#onBeat">onBeat</a></li><li><a href="global.html#onBeatChange">onBeatChange</a></li><li><a href="global.html#onBeatClick">onBeatClick</a></li><li><a href="global.html#onLoadFinish">onLoadFinish</a></li><li><a href="global.html#onSequenceModeChange">onSequenceModeChange</a></li><li><a href="global.html#playPause">playPause</a></li><li><a href="global.html#playSound">playSound</a></li><li><a href="global.html#pullGet">pullGet</a></li><li><a href="global.html#pushGet">pushGet</a></li><li><a href="global.html#replaceSymbols">replaceSymbols</a></li><li><a href="global.html#reset">reset</a></li><li><a href="global.html#saveScene">saveScene</a></li><li><a href="global.html#selectInstrument">selectInstrument</a></li><li><a href="global.html#sequenceMode">sequenceMode</a></li><li><a href="global.html#sequenceNumber">sequenceNumber</a></li><li><a href="global.html#setSequenceMode">setSequenceMode</a></li><li><a href="global.html#setTempo">setTempo</a></li><li><a href="global.html#setup">setup</a></li><li><a href="global.html#start">start</a></li><li><a href="global.html#stop">stop</a></li><li><a href="global.html#switchify">switchify</a></li><li><a href="global.html#tapTempo">tapTempo</a></li><li><a href="global.html#tempo">tempo</a></li><li><a href="global.html#toObject">toObject</a></li><li><a href="global.html#updateLeds">updateLeds</a></li><li><a href="global.html#volumeKnobs">volumeKnobs</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Tue May 10 2016 16:56:12 GMT-0500 (Central Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

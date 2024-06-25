@@ -65,6 +65,14 @@
   }
 
   function playSound(e) {
+    let code;
+  if (e.keyCode) {
+    // it was a keypress, get the keycode as usual
+    code = e.keyCode;
+  } else {
+    // it was a click.  Read the keycode from the div that was clicked
+    code = this.dataset.key;
+  }
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
     if (!audio) return;
@@ -77,7 +85,7 @@
   const keys = Array.from(document.querySelectorAll('.key'));
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
-  keys.addEventListener('click', () => {audio.play();});
+  key.addEventListener('click', playSound);
 </script>
 
 

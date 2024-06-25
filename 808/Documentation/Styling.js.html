@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Styling.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Styling.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @author John McCain &lt;johnm.freestate@gmail.com>
+ * @version 1.0
+ */
+
+/**
+ * The DOM Element objects of each led, indexed by beat
+ * @type {Array}
+ */
+var leds = Array();
+
+for (var i = 0; i &lt; 16; ++i) {
+    var myId = 'id' + (i + 1);
+    leds[i] = document.getElementById(myId);
+}
+
+/**
+ * The DOM Element objects of each instrument channel, indexed by order on the screen from left to right
+ * @type {Array}
+ */
+var channels = Array();
+
+for (var i = 0; i &lt; 16; ++i) {
+    var myId = 'i' + (i + 1);
+    channels[i] = document.getElementById(myId);
+}
+
+/**
+ * The DOM Element objects of each instrument volume, indexed by order on the screen from left to right
+ * @type {Array}
+ */
+var volumeKnobs = Array();
+
+for (var i = 0; i &lt; 16; ++i) {
+    var myId = 'v' + (i + 1);
+    volumeKnobs[i] = document.getElementById(myId);
+}
+
+/**
+ * The DOM Element objects of each sequnce mode button
+ * @type {Array}
+ */
+var modeButtons = [document.getElementById('sequenceA'), document.getElementById('sequenceB'), document.getElementById('sequenceAB')];
+
+/**
+ * Toggles the color of the beat button pressed and calls changeBeat
+ * @param {number} beat - the beat of the button that was pressed (from 0-15)
+ */
+function onBeatClick(beat) {
+    leds[beat].classList.toggle("ledOn");
+    leds[beat].classList.toggle("ledOff");
+    changeBeat(beat);
+}
+
+/**
+ * Sets the sequenceMode
+ * @param {number} mode - 0 for A, 1 for B, 2 for AB
+ */
+function setSequenceMode(mode) {
+    modeButtons[mode].classList.add('on');
+    modeButtons[(mode + 1) % 3].classList.remove('on');
+    modeButtons[(mode + 2) % 3].classList.remove('on');
+    sequenceMode = mode;
+    onSequenceModeChange();
+}
+
+/**
+ * Updates the leds to show current beat positions.
+ */
+function onBeatChange() {
+    leds[beat].classList.add("ledBeat");
+    leds[(beat - 1 &lt; 0 ? 15 : beat - 1)].classList.remove("ledBeat");
+}
+
+/**
+ * Clears the beat indicator.
+ */
+function clearBeatIndicator() {
+    leds[(beat - 1 &lt; 0 ? 15 : beat - 1)].classList.remove("ledBeat");
+}
+
+/**
+ * Updates the Leds to reflect the current state of the selected instrument's sequence
+ */
+function updateLeds() {
+    for (var i = 0; i &lt; 16; ++i) {
+        if (currentInstrument.sequence[sequenceNumber][i] > 0) {
+            //led should be on
+            leds[i].classList.remove("ledOff");
+            leds[i].classList.add("ledOn");
+        } else {
+            //led should be off
+            leds[i].classList.remove("ledOn");
+            leds[i].classList.add("ledOff");
+        }
+    }
+}
+
+/**
+ * An array of all the instrument control elements
+ * @type {array}
+ */
+var controls = [
+    [document.getElementById('BDDecay'), document.getElementById('BDTone')],
+    [document.getElementById('SDSnappy'), document.getElementById('SDTone')],
+    [document.getElementById('LTuning'), document.getElementById('LSwitch')],
+    [document.getElementById('MTuning'), document.getElementById('MSwitch')],
+    [document.getElementById('HTuning'), document.getElementById('HSwitch')],
+    [document.getElementById('RSSwitch')],
+    [document.getElementById('CPSwitch')],
+    [],
+    [document.getElementById('CYDecay'), document.getElementById('CYTone')],
+    [document.getElementById('OHDecay')],
+    []
+];
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Instrument.html">Instrument</a></li><li><a href="Knob.html">Knob</a></li><li><a href="MyBufferLoader.html">MyBufferLoader</a></li><li><a href="Switch.html">Switch</a></li><li><a href="TapTempo.html">TapTempo</a></li><li><a href="Timer.html">Timer</a></li></ul><h3>Global</h3><ul><li><a href="global.html#audioContext">audioContext</a></li><li><a href="global.html#beat">beat</a></li><li><a href="global.html#beatTimer">beatTimer</a></li><li><a href="global.html#blankSceneObjStr">blankSceneObjStr</a></li><li><a href="global.html#BufferLists">BufferLists</a></li><li><a href="global.html#changeBeat">changeBeat</a></li><li><a href="global.html#channels">channels</a></li><li><a href="global.html#clearBeatIndicator">clearBeatIndicator</a></li><li><a href="global.html#compressSceneData">compressSceneData</a></li><li><a href="global.html#compressSequence">compressSequence</a></li><li><a href="global.html#controls">controls</a></li><li><a href="global.html#createInstruments">createInstruments</a></li><li><a href="global.html#currentInstrument">currentInstrument</a></li><li><a href="global.html#decompressSceneData">decompressSceneData</a></li><li><a href="global.html#decompressSequence">decompressSequence</a></li><li><a href="global.html#getBufferIndex">getBufferIndex</a></li><li><a href="global.html#incrementLoadingProgress">incrementLoadingProgress</a></li><li><a href="global.html#instruments">instruments</a></li><li><a href="global.html#jMasterVolumeKnob">jMasterVolumeKnob</a></li><li><a href="global.html#jTempoKnob">jTempoKnob</a></li><li><a href="global.html#knobbify">knobbify</a></li><li><a href="global.html#leds">leds</a></li><li><a href="global.html#leftPad">leftPad</a></li><li><a href="global.html#LOAD_TOTAL">LOAD_TOTAL</a></li><li><a href="global.html#loadCount">loadCount</a></li><li><a href="global.html#loadFromObject">loadFromObject</a></li><li><a href="global.html#loadScene">loadScene</a></li><li><a href="global.html#makeKnob">makeKnob</a></li><li><a href="global.html#makeSwitch">makeSwitch</a></li><li><a href="global.html#masterVolume">masterVolume</a></li><li><a href="global.html#modeButtons">modeButtons</a></li><li><a href="global.html#onBeat">onBeat</a></li><li><a href="global.html#onBeatChange">onBeatChange</a></li><li><a href="global.html#onBeatClick">onBeatClick</a></li><li><a href="global.html#onLoadFinish">onLoadFinish</a></li><li><a href="global.html#onSequenceModeChange">onSequenceModeChange</a></li><li><a href="global.html#playPause">playPause</a></li><li><a href="global.html#playSound">playSound</a></li><li><a href="global.html#pullGet">pullGet</a></li><li><a href="global.html#pushGet">pushGet</a></li><li><a href="global.html#replaceSymbols">replaceSymbols</a></li><li><a href="global.html#reset">reset</a></li><li><a href="global.html#saveScene">saveScene</a></li><li><a href="global.html#selectInstrument">selectInstrument</a></li><li><a href="global.html#sequenceMode">sequenceMode</a></li><li><a href="global.html#sequenceNumber">sequenceNumber</a></li><li><a href="global.html#setSequenceMode">setSequenceMode</a></li><li><a href="global.html#setTempo">setTempo</a></li><li><a href="global.html#setup">setup</a></li><li><a href="global.html#start">start</a></li><li><a href="global.html#stop">stop</a></li><li><a href="global.html#switchify">switchify</a></li><li><a href="global.html#tapTempo">tapTempo</a></li><li><a href="global.html#tempo">tempo</a></li><li><a href="global.html#toObject">toObject</a></li><li><a href="global.html#updateLeds">updateLeds</a></li><li><a href="global.html#volumeKnobs">volumeKnobs</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Tue May 10 2016 16:56:12 GMT-0500 (Central Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
