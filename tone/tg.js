@@ -149,6 +149,8 @@
         }
     }, false);
 
+    //need slider and text input link
+
     document.getElementById('btnPlay').addEventListener('click', startPlaying);
 
     document.getElementById('btnStop').addEventListener('click', function () {
@@ -178,13 +180,17 @@
         startPlaying();
     }
 
+
+    
     freqText.value = getFrequency(freqSlider);
 
-    const frq = document.querySelector("title");
-    function frqtitle(){
-        document.title = document.getElementById("freq_text").value;
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById("freq").onchange = function (){
+            document.title = freqText.value;
+        }
+        document.getElementById("freq_text").oninput = function (){
+            document.title = freqText.value;
+        }
+    })
 
-    }
-    frq.addEventListener('change', frqtitle());
-    
 }());
