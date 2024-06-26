@@ -117,6 +117,7 @@
         await term.echo("clear", { typing: true, delay: 50 });
         await term.echo("808", { typing: true, delay: 50 });
         await term.echo("blocks", { typing: true, delay: 50 });
+        await term.echo("tone", { typing: true, delay: 50 });
       },
       clock: async function () {
         await term.reset();
@@ -157,8 +158,9 @@
       blocks: async function () {
         await open("/../blocks");
       },
-
-
+      tone: async function () {
+        await open("/../tone");
+      },
       figlet: async function () {
         await open('figlet');
       },

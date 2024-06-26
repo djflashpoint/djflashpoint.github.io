@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title id="title"></title>
+        <link rel="shortcut icon" href="img/favicon.png" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Sine Wave Tone Generator</h1>
+        <canvas id="sine"></canvas>
+        <form id="controls" action="#">
+          <label for="freq">Frequency:</label>
+          <input type="range" id="freq" min="700" max="10000" value="2097">
+          <p>
+
+          </p>
+          <input type="text" id="freq_text" readonly>
+          <label for="freq_text">Hz</label>
+            <p>
+
+            </p>
+          <button id="btnPlay" type="button">play</button>
+          <button id="btnStop" type="button">stop</button>
+        </form>
+        <script src="tg.js"></script>
+    </body>
+</html>

@@ -28,6 +28,7 @@ function bgmStop() {
       $(".play").addClass("active");
       $(".cog-img").addClass("rotating");
       $(".stop").removeClass("active");
+      
     }
     function bgmStop() {
       bgm.pause();
