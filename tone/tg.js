@@ -186,10 +186,12 @@
 
     document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("freq").onchange = function (){
-            document.title = freqText.value;
+            document.title = freq.value;
+            /* frequency = getFrequency(freqSlider).onchange; */
         }
         document.getElementById("freq_text").oninput = function (){
             document.title = freqText.value;
+            /* freq.value = freqText.value; */
         }
     })
 
