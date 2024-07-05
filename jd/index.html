@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="StyleSheet" href="style.css" type="text/css">
     <title>Jorge Doe</title>
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
 </head>
 <body>
+    <div class="topnav">
+        <a href="/index.html" class="active">«ďĵƒLÅSĥpōįnŧ»</a>
+        <p>
+          <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="https://www.amazon.com/music/player/artists/B07Y5Y1XHW/jorge-doe"><i class="fa fa-amazon"></i></a>
+            <a href="https://music.apple.com/us/artist/jorge-doe/1478563941"><i class="fa fa-apple"></i></a>
+            <a href="https://open.spotify.com/artist/31YYBoggVT5JtIhurl4qux"><i class="fa fa-spotify"></i></a>
+            
+            <a href="https://www.instagram.com/jorgedoe/?hl=en"><i class="fa fa-instagram"></i></a>
+            
+            <a href="https://www.youtube.com/@JorgeDoe"><i class="fa fa-youtube-play"></i></a>
+            
+              <br>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ebXbGYKp8a8?si=VeYnmF3mjNleNGnX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
