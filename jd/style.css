@@ -7,7 +7,7 @@ html, body {
     height: 100dvh;
     min-width: min-content;
     box-sizing: border-box;
-    display: inline-block;
+    display: inline;
 }
 /* 
      \_______/
