@@ -7,11 +7,7 @@ html, body {
     height: 100dvh;
     min-width: min-content;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-around;
-    overflow:hidden;
+    display: inline-block;
 }
 /* 
      \_______/
