@@ -6,5 +6,5 @@ function clock() {
 function clog() {
     setInterval(function () {
         console.log(new Date());
-    }, 30000);
+    }, 60000);
 }
